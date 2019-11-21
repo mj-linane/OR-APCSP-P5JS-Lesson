@@ -1,14 +1,12 @@
-function setup (){
-  createCanvas(600,600)
-  background(60)
-  // frameRate(3)
+function setup() {
+  createCanvas(600, 600);
+
 }
 
-function draw(){
-  let y = random(601);
-  strokeWeight(random(5));
-  // stroke(random(256),random(256),random(256),random)
-  line(random(600),y,random(600),y);
-  // fill(random(256),random(256),random(256))
-  // triangle(300,300,300,400,400,400)
+function draw() {
+  background(70);
+  fill(100, 70, 70);
+  square(100, 100, 100);
+  fill(150, 0, 0);
+  square(200, 200, 100);
 }
