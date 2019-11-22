@@ -1,5 +1,4 @@
 // Setup angle to change it by 1 after each drawing
-let angle = 0
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -8,6 +7,7 @@ function setup() {
   // Defaults to radians (measurement of the arc) so we need to setup DEGREES
   angleMode(DEGREES);
   noLoop();
+  smooth();
 
 }
 
@@ -19,16 +19,24 @@ function draw() {
   // Change origin of drawing
   translate(700, 300);
 
-  // Rotate canvas in an angle
-  rotate(angle);
-
-  line(0, 0, 50, 50);
   // rectMode(CENTER);
   // Have greater control over the number of squares being drawn by using a for loop
-  for (let i = 0; i < 1; i++) {
-    rotate(angle)
-    square(0, 0, 300)
-    angle = angle + 1
+  for (let i = 0; i < 23; i++) {
+    rotate(angle);
+    square(0, 0, 150);
   }
 
+}
+
+function setup() {
+  createCanvas(600, 120);
+  noStroke();
+}
+
+function draw() {
+  background(180);
+
+  for (let x = 100; x < width; x = x + 100) {
+    ellipse(x, 60, 40, 40)
+  }
 }
