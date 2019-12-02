@@ -9,9 +9,9 @@ function setup() {
 function draw() {
   // These five functions draw everything. Order matters
   // for how different parts of the picture are layered.
+  drawAllBubbles();
   drawAllSeaStars();
   // drawAllFish();
-  // drawAllBubbles();
   // drawAllSunbeams();
 }
 
