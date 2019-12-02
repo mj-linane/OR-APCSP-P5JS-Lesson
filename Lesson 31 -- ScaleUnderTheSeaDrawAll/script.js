@@ -10,6 +10,7 @@ function draw() {
   drawAllSeaStars();
   drawAllBubbles();
   drawAllFish();
+  drawAllSunbeams();
 }
 
 function drawAllFish() {
@@ -22,6 +23,10 @@ function drawFish() {
 
 function drawBubbles() {
 
+}
+
+function drawAllSunbeams() {
+  
 }
 
 
