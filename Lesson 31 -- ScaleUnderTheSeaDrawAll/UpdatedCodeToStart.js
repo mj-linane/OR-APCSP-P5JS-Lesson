@@ -81,11 +81,19 @@ function drawBubble() {
 }
 
 // Sunbeams are semi-transparent lines
-function drawSunbeam(size) {
-  scale(size);
-  strokeWidth(random(1, 15));
-  stroke(256, 256, 256, 0.1);
-  scale(1 / size);
+function drawSunbeam() {
+  // Sets up the size of the beams
+  strokeWeight(random(1, 15));
+
+  // White light with a random opacity.
+  stroke(256, 256, 256, random(256));
+  // Generate random locations for sunbeams
+  let x1 = random(width);
+  let x2 = x1 + 100;
+  let y2 = random(height / 4, height / 2);
+
+  // draws individual sunbeam
+  line(x1, 0, x2, y2);
 }
 
 
