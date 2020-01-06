@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": -70.82,
+    "lat": 41.66
+  },
+  "weather": [
+    {
+      "id": 500,
+      "main": "Rain",
+      "description": "light rain",
+      "icon": "10d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 34.63,
+    "feels_like": 28,
+    "temp_min": 33.01,
+    "temp_max": 36,
+    "pressure": 1012,
+    "humidity": 80
+  },
+  "visibility": 11265,
+  "wind": {
+    "speed": 4.7,
+    "deg": 260
+  },
+  "clouds": {
+    "all": 90
+  },
+  "dt": 1578339672,
+  "sys": {
+    "type": 1,
+    "id": 5009,
+    "country": "US",
+    "sunrise": 1578312614,
+    "sunset": 1578346034
+  },
+  "timezone": -18000,
+  "id": 0,
+  "name": "Mattapoisett",
+  "cod": 200
+}
