@@ -2,8 +2,8 @@ let weather;
 let json;
 
 function preload() {
-  let url = 'http://api.openweathermap.org/data/2.5/weather?zip=02739&units=imperial&APPID=2acad937ffe0ddfb37cf4b76eeb5d094';
-  json = loadJSON(url)
+  // let url = 'http://api.openweathermap.org/data/2.5/weather?zip=02739&units=imperial&APPID=2acad937ffe0ddfb37cf4b76eeb5d094';
+  // json = loadJSON(url)
 }
 
 function setup() {
@@ -14,10 +14,16 @@ function setup() {
 function draw() {
   noLoop();
 
+
   // CALCULATE HUE AND SET BACKGROUND COLOR
 
   // Round temp so it can be easily converted to Hue
-  temp = Math.round(json.main.temp);
+  //temp = Math.round(json.main.temp);
+  temp = 45;
+
+
+  // Display Temp In DOM
+  document.getElementById("temp").innerHTML = temp;
 
   /* 
   Calculates hue as a range of colors from 0 - 360 for HSL
@@ -31,9 +37,8 @@ function draw() {
   */
 
   let hue = 200 + (160 * (temp / 100))
-
-  // SET BACKGROUND FOR CURRENT TEMP
-  background(hue, 100, 50)
+  // SET BACKGROUND OF PAGE AND ELEMENTS FOR CURRENT TEMP
+  document.body.style.backgroundColor = "hsl(" + hue + ", " + "100%, " + "50%" + ")"
 
   console.log("Current Temp: " + temp + "F in Mattapoisett")
   console.log("Hue: " + hue)
