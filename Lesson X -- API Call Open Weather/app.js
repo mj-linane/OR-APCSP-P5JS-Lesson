@@ -18,8 +18,7 @@ function draw() {
   // CALCULATE HUE AND SET BACKGROUND COLOR
 
   // Round temp so it can be easily converted to Hue
-  // temp = Math.round(json.main.temp);
-  temp = 50
+  temp = Math.round(json.main.temp);
 
 
   // Display Temp In DOM
