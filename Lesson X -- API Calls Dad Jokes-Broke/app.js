@@ -1,6 +1,7 @@
 let json;
-let joke;
-const api_url = 'https://icanhazdadjoke.com/';
+let jokeSetup;
+let jokePunchline;
+const api_url = 'https://official-joke-api.appspot.com/random_joke';
 
 
 function preload() {
@@ -9,6 +10,8 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  joke = json.joke;
-  document.getElementById('joke').innerHTML = joke;
+  jokeSetup = json.setup;
+  jokePunchline = json.punchline;
+  document.getElementById('setup').innerHTML = jokeSetup;
+  document.getElementById('jokePunchline').innerHTML = jokePunchline;
 }
