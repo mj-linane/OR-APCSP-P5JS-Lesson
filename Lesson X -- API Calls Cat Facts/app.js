@@ -1,10 +1,10 @@
 let json;
 let fact;
-const api_url = 'https://cat-fact.herokuapp.com/facts/random';
+const apiURL = 'https://cat-fact.herokuapp.com/facts/random';
 
 
 function preload() {
-  json = loadJSON(api_url);
+  json = loadJSON(apiURL);
 }
 
 function setup() {
