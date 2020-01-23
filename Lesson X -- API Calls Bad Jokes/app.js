@@ -10,8 +10,12 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+
   jokeSetup = json.setup;
   jokePunchline = json.punchline;
+
   document.getElementById('setup').innerHTML = jokeSetup;
-  document.getElementById('jokePunchline').innerHTML = jokePunchline;
+  document.getElementById('punchline').innerHTML = jokePunchline;
 }
+
+
