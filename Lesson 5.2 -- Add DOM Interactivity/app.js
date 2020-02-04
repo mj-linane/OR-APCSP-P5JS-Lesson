@@ -10,7 +10,7 @@ function draw() {
 }
 
 function mouseReleased() {
-  createP('Hello There!')
+  createP('Hello There!') 
 }
 
 function createSomeText() {
