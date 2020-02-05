@@ -84,3 +84,45 @@
 //     pop();
 //   }
 // }
+
+
+// CHASER GAME
+let img
+let banana
+let banana2
+
+function preload() {
+  img = loadImage('../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/banana.png')
+}
+
+function setup() {
+  createCanvas(windowWidth, windowHeight)
+  frameRate(2)
+}
+
+function draw() {
+  clear()
+  banana = new Banana(random(width), random(height))
+}
+
+function mousePressed() {
+}
+
+function Banana(x, y) {
+  this.x = x
+  this.y = y
+
+  image(img, this.x, this.y, 100, 100)
+
+
+  this.move = function () {
+    this.x = this.x + random(-5, 5)
+    this.y = this.x + random(-5, 5)
+  }
+
+  this.clicked = function () {
+    console.log('you won!')
+  }
+
+}
+
