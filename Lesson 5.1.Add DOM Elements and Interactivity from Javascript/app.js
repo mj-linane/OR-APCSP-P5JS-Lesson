@@ -114,13 +114,11 @@ function Banana(x, y) {
   this.y = y
 
   image(img, this.x, this.y, 100, 100)
-
-
-
-  this.move = function () {
-    this.x = this.x + random(-5, 5)
-    this.y = this.x + random(-5, 5)
-  }
+  
+  // this.move = function () {
+  //   this.x = this.x + random(-5, 5)
+  //   this.y = this.x + random(-5, 5)
+  // }
 
   this.clicked = function () {
     let d = dist(mouseX, mouseY, this.x, this.y)
