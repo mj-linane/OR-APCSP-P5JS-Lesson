@@ -154,3 +154,40 @@
 //   console.log('You Won')
 // }
 
+
+// NAVIGATE LINKS
+// let button;
+
+// function setup() {
+//   createCanvas(400, 400);
+// 	button = createButton('GO TO TWITTER');
+// 	button.position(width/2, height/2)
+// 	button.mousePressed(gotolink)
+// }
+
+// function draw() {
+//   background(220);
+// }
+
+// function gotolink() {
+// 	window.open('https://twitter.com/');
+// }
+
+// // NAVIGATE TO PAGES
+// let button;
+
+// function setup() {
+//   createCanvas(400, 400);
+//   button = createButton('Go To Main Page');
+//   button.position(width / 2, height / 2)
+//   button.mousePressed(gotolink)
+// }
+
+// function draw() {
+//   background(220);
+// }
+
+// function gotolink() {
+//   // window.open('http://example.com/new_url'); // New tab
+//   window.location.href = '../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/main.html'; // Same tab
+// }
