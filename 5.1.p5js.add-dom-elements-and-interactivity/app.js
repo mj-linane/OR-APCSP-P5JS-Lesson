@@ -134,25 +134,25 @@
 // }
 
 
-// CHASER GAME -- ACCESSING IMAGES ON CANVAS WITH CREATEIMG
-// let bananaImg
+// CHASER GAME-- ACCESSING IMAGES ON CANVAS WITH CREATEIMG
+let bananaImg
 
-// function setup() {
-//   createCanvas(windowWidth, windowHeight)
-//   bananaImg = createImg('../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/banana.png')
-//   bananaImg.size(200, 100)
-//   console.log(bananaImg)
-//   frameRate(3)
-// }
+function setup() {
+  createCanvas(windowWidth, windowHeight)
+  bananaImg = createImg('../5.1.p5js.add-dom-elements-and-interactivity/banana.png')
+  bananaImg.size(200, 100)
+  console.log(bananaImg)
+  frameRate(1)
+}
 
-// function draw() {
-//   bananaImg.position(random(width), random(height))
-//   bananaImg.mousePressed(youWon)
-// }
+function draw() {
+  bananaImg.position(random(width), random(height))
+  bananaImg.mousePressed(youWon)
+}
 
-// function youWon() {
-//   console.log('You Won')
-// }
+function youWon() {
+  console.log('You Won')
+}
 
 
 // NAVIGATE LINKS
