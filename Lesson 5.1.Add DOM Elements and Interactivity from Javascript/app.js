@@ -86,50 +86,71 @@
 // }
 
 
-// CHASER GAME -- ACCESSING IMAGES ON CANVAS
-let bananaImg
-let strawberryImg
-let banana
-let strawberry
+// // CHASER GAME -- ACCESSING IMAGES ON CANVAS WITH CONSTRUCTORS
+// let bananaImg
+// let strawberryImg
+// let banana
+// let strawberry
 
-function preload() {
-  bananaImg = loadImage('../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/banana.png')
-  strawberryImg = loadImage('../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/strawberry.png')
-}
+// function preload() {
+//   bananaImg = loadImage('../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/banana.png')
+//   strawberryImg = loadImage('../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/strawberry.png')
+// }
 
-function setup() {
-  createCanvas(windowWidth, windowHeight)
-  frameRate(2)
-}
+// function setup() {
+//   createCanvas(windowWidth, windowHeight)
+//   frameRate(2)
+// }
 
-function draw() {
-  clear()
-  banana = new Fruit(random(width), random(height), bananaImg)
-  strawberry = new Fruit(random(width), random(height), strawberryImg)
-  //console.log(Fruit)
-}
+// function draw() {
+//   clear()
+//   banana = new Fruit(random(width), random(height), bananaImg)
+//   strawberry = new Fruit(random(width), random(height), strawberryImg)
+//   //console.log(Fruit)
+// }
 
-function mousePressed() {
-  banana.clicked()
-  strawberry.clicked()
-}
+// function mousePressed() {
+//   banana.clicked()
+//   strawberry.clicked()
+// }
 
-function Fruit(x, y, img) {
-  this.x = x
-  this.y = y
+// function Fruit(x, y, img) {
+//   this.x = x
+//   this.y = y
 
-  image(img, this.x, this.y, 100, 100)
+//   image(img, this.x, this.y, 100, 100)
 
-  // this.move = function () {
-  //   this.x = this.x + random(-5, 5)
-  //   this.y = this.x + random(-5, 5)
-  // }
+//   // this.move = function () {
+//   //   this.x = this.x + random(-5, 5)
+//   //   this.y = this.x + random(-5, 5)
+//   // }
 
-  this.clicked = function () {
-    let d = dist(mouseX, mouseY, this.x, this.y)
-    if (d < 100) {
-      console.log('you won!')
-    }
-  }
-}
+//   this.clicked = function () {
+//     let d = dist(mouseX, mouseY, this.x, this.y)
+//     if (d < 100) {
+//       console.log('you won!')
+//     }
+//   }
+// }
+
+
+// CHASER GAME -- ACCESSING IMAGES ON CANVAS WITH CREATEIMG
+// let bananaImg
+
+// function setup() {
+//   createCanvas(windowWidth, windowHeight)
+//   bananaImg = createImg('../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/banana.png')
+//   bananaImg.size(200, 100)
+//   console.log(bananaImg)
+//   frameRate(3)
+// }
+
+// function draw() {
+//   bananaImg.position(random(width), random(height))
+//   bananaImg.mousePressed(youWon)
+// }
+
+// function youWon() {
+//   console.log('You Won')
+// }
 
