@@ -93,8 +93,8 @@
 // let strawberry
 
 // function preload() {
-//   bananaImg = loadImage('../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/banana.png')
-//   strawberryImg = loadImage('../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/strawberry.png')
+//   bananaImg = loadImage('banana.png')
+//   strawberryImg = loadImage('strawberry.png')
 // }
 
 // function setup() {
@@ -120,11 +120,6 @@
 
 //   image(img, this.x, this.y, 100, 100)
 
-//   // this.move = function () {
-//   //   this.x = this.x + random(-5, 5)
-//   //   this.y = this.x + random(-5, 5)
-//   // }
-
 //   this.clicked = function () {
 //     let d = dist(mouseX, mouseY, this.x, this.y)
 //     if (d < 100) {
@@ -136,13 +131,17 @@
 
 // CHASER GAME-- ACCESSING IMAGES ON CANVAS WITH CREATEIMG
 let bananaImg
+let heading
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
-  bananaImg = createImg('../5.1.p5js.add-dom-elements-and-interactivity/banana.png')
+  bananaImg = createImg('banana.png', 'banana image')
   bananaImg.size(200, 100)
   console.log(bananaImg)
   frameRate(1)
+
+  heading = createElement('h2', 'Click The Banana!')
+  heading.position(width / 3, height / 4)
 }
 
 function draw() {
@@ -151,7 +150,10 @@ function draw() {
 }
 
 function youWon() {
+  heading.html('You Won!')
   console.log('You Won')
+  bananaImg.remove()
+
 }
 
 
