@@ -54,44 +54,47 @@
 // }
 
 // // BUTTON CLICK LISTENERS
-let button
-let greeting
+// let button
+// let greeting
 
-function setup() {
-  // create canvas
-  createCanvas(windowWidth, windowHeight)
+// function setup() {
+//   // create canvas
+//   createCanvas(windowWidth, windowHeight)
 
-  button = createButton('Try Me');
-  button.position(width / 2, height / 2)
-  button.mousePressed(greet)
+//   button = createButton('Try Me');
+//   button.position(width / 2, height / 2)
+//   button.mousePressed(greet)
 
-  greeting = createElement('h2', 'Say Hello!')
-  greeting.position(width / 2, height / 3)
+//   greeting = createElement('h2', 'Say Hello!')
+//   greeting.position(width / 2, height / 3)
 
-  textAlign(CENTER)
-  textSize(50)
-}
+//   textAlign(CENTER)
+//   textSize(50)
+// }
 
-function greet() {
-  greeting.html('HELLO!')
+// function greet() {
+//   greeting.html('HELLO!')
 
-  for (let i = 0; i < 200; i++) {
-    push();
-    fill(random(255), 255, 255);
-    translate(random(width), random(height))
-    rotate(random(2 * PI));
-    text('HELLO', 0, 0);
-    pop();
-  }
-}
+//   for (let i = 0; i < 200; i++) {
+//     push();
+//     fill(random(255), 255, 255);
+//     translate(random(width), random(height))
+//     rotate(random(2 * PI));
+//     text('HELLO', 0, 0);
+//     pop();
+//   }
+// }
 
 
-// CHASER GAME
-let img
+// CHASER GAME -- ACCESSING IMAGES ON CANVAS
+let bananaImg
+let strawberryImg
 let banana
+let strawberry
 
 function preload() {
-  img = loadImage('../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/banana.png')
+  bananaImg = loadImage('../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/banana.png')
+  strawberryImg = loadImage('../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/strawberry.png')
 }
 
 function setup() {
@@ -101,14 +104,17 @@ function setup() {
 
 function draw() {
   clear()
-  banana = new Banana(random(width), random(height))
+  banana = new Fruit(random(width), random(height), bananaImg)
+  strawberry = new Fruit(random(width), random(height), strawberryImg)
+  //console.log(Fruit)
 }
 
 function mousePressed() {
   banana.clicked()
+  strawberry.clicked()
 }
 
-function Banana(x, y) {
+function Fruit(x, y, img) {
   this.x = x
   this.y = y
 
@@ -125,6 +131,5 @@ function Banana(x, y) {
       console.log('you won!')
     }
   }
-
 }
 
