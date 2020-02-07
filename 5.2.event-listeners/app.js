@@ -1,21 +1,16 @@
-// Code: Add an h1, an h2, an h3 and an h4 to your app.js using the createElement function.
-
-// CREATE HTML ELEMENTS
-
-// CREATE ELEMENTS WITHOUT IDs
+// CREATE HTML WITH CREATEELEMENT WITHOUT IDs
 // function setup() {
 //   createCanvas(windowWidth, windowHeight)
 //   createElement('h1', 'My lucky number is...')
 //   createElement('p', '14')
 // }
 
-// CREATE ELEMENTS WITH ID
+// CREATE HTML WITH CREATEELEMENT WITH IDs
 // function setup() {
 //   createCanvas(windowWidth, windowHeight)
 //   let titleText = createElement('h1', 'My lucky number is...')
 //   let numText =  createElement('p', '14')
 // }
-
 
 // EVENT LISTENERS
 
@@ -93,8 +88,8 @@
 // let strawberry
 
 // function preload() {
-//   bananaImg = loadImage('banana.png')
-//   strawberryImg = loadImage('strawberry.png')
+//   bananaImg = loadImage('/images/banana.png')
+//   strawberryImg = loadImage('/images/strawberry.png')
 // }
 
 // function setup() {
@@ -129,39 +124,39 @@
 // }
 
 
-// CHASER GAME-- ACCESSING IMAGES ON CANVAS WITH CREATEIMG
-let bananaImg
-let heading
+// // CHASER GAME-- ACCESSING IMAGES ON CANVAS WITH CREATEIMG
+// let bananaImg
+// let heading
 
-function setup() {
-  createCanvas(windowWidth, windowHeight)
-  bananaImg = createImg('banana.png', 'banana image')
-  bananaImg.size(200, 100)
-  console.log(bananaImg)
-  frameRate(1)
+// function setup() {
+//   createCanvas(windowWidth, windowHeight)
+//   bananaImg = createImg('/images/banana.png', 'banana image')
+//   bananaImg.size(200, 100)
+//   console.log(bananaImg)
+//   frameRate(1)
 
-  heading = createElement('h2', 'Click The Banana!')
-  heading.position(width / 3, height / 4)
-}
+//   heading = createElement('h2', 'Click The Banana!')
+//   heading.position(width / 3, height / 4)
+// }
 
-function draw() {
-  bananaImg.position(random(width), random(height))
-  bananaImg.mousePressed(youWon)
-}
+// function draw() {
+//   bananaImg.position(random(width), random(height))
+//   bananaImg.mousePressed(youWon)
+// }
 
-function youWon() {
-  heading.html('You Won!')
-  console.log('You Won')
-  bananaImg.remove()
+// function youWon() {
+//   heading.html('You Won!')
+//   console.log('You Won')
+//   bananaImg.remove()
 
-}
+// }
 
 
 // NAVIGATE LINKS
 // let button;
 
 // function setup() {
-//   createCanvas(400, 400);
+//  createCanvas(400, 400);
 // 	button = createButton('GO TO TWITTER');
 // 	button.position(width/2, height/2)
 // 	button.mousePressed(gotolink)
@@ -180,7 +175,7 @@ function youWon() {
 
 // function setup() {
 //   createCanvas(400, 400);
-//   button = createButton('Go To Main Page');
+//   button = createButton('Play The Game');
 //   button.position(width / 2, height / 2)
 //   button.mousePressed(gotolink)
 // }
@@ -190,6 +185,5 @@ function youWon() {
 // }
 
 // function gotolink() {
-//   // window.open('http://example.com/new_url'); // New tab
-//   window.location.href = '../Lesson 5.1.Add DOM Elements and Interactivity from Javascript/main.html'; // Same tab
+//   window.location.href = '/main.html'; // Same tab
 // }
