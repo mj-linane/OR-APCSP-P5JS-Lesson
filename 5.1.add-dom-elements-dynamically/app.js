@@ -6,5 +6,5 @@ function setup() {
 
 function draw() {
   // This will create paragraphs continually
-  createP('This is created in javascript')
+  createP('This is was also created in javascript')
 }
