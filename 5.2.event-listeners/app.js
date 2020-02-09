@@ -1,144 +1,140 @@
 //CREATE HTML WITH CREATEELEMENT WITHOUT IDs
 function setup() {
-  createCanvas(windowWidth, windowHeight)
-  createElement('h1', 'My lucky number is...')
-  createElement('p', '14')
-}
-
-//CREATE HTML WITH CREATEELEMENT WITH IDs
-function setup() {
-  createCanvas(windowWidth, windowHeight)
-  let titleText = createElement('h1', 'My lucky number is...')
-  let numText = createElement('p', '14')
-}
-
-//EVENT LISTENERS
-
-//MOUSE CLICKS
-//GUESS LUCKY NUMBER
-function setup() {
-  createCanvas(400, 400)
-  createElement('h1', 'my lucky numbers below')
-}
-
-function mousePressed() {
-  createP('my lucky number is ' + random(0, 10))
-}
-
-function draw() {
-  background(220);
-}
-
-//CREATE TEXT
-let gray = 0;
-
-function setup() {
   createCanvas(windowWidth, windowHeight);
+  createElement('h1', 'My lucky number is...');
+  createElement('p', '14');
 }
 
+// //CREATE HTML WITH CREATEELEMENT WITH IDs
+// function setup() {
+//   createCanvas(windowWidth, windowHeight);
+//   let titleText = createElement('h1', 'My lucky number is...');
+//   let numText = createElement('p', '14');
+// }
 
-function draw() {
-  background('white');
-}
+// //EVENT LISTENERS
 
-function mouseReleased() {
-  createP('Hello There!')
-}
+// //MOUSE CLICKS
+// //GUESS LUCKY NUMBER
+// function setup() {
+//   createCanvas(400, 400);
+//   createElement('h1', 'my lucky numbers below');
+// }
 
-function createSomeText() {
-}
+// function mousePressed() {
+//   createP('my lucky number is ' + random(0, 10));
+// }
 
-// BUTTON CLICK LISTENERS
-let button
-let greeting
+// function draw() {
+//   background(220);
+// }
 
-function setup() {
-  createCanvas(windowWidth, windowHeight)
+// //CREATE TEXT
+// let gray = 0;
 
-  button = createButton('Try Me');
-  button.position(width / 2, height / 2)
-  button.mousePressed(greet)
+// function setup() {
+//   createCanvas(windowWidth, windowHeight);
+// }
 
-  greeting = createElement('h2', 'Say Hello!')
-  greeting.position(width / 2, height / 3)
+// function draw() {
+//   background('white');
+// }
 
-  textAlign(CENTER)
-  textSize(50)
-}
+// function mouseReleased() {
+//   createP('Hello There!');
+// }
 
-function greet() {
-  greeting.html('HELLO!')
+// function createSomeText() {}
 
-  for (let i = 0; i < 200; i++) {
-    push();
-    fill(random(255), 255, 255);
-    translate(random(width), random(height))
-    rotate(random(2 * PI));
-    text('HELLO', 0, 0);
-    pop();
-  }
-}
+// // BUTTON CLICK LISTENERS
+// let button;
+// let greeting;
 
-// CHASER GAME-- ACCESSING IMAGES ON CANVAS WITH CREATEIMG
-let bananaImg
-let heading
+// function setup() {
+//   createCanvas(windowWidth, windowHeight);
 
-function setup() {
-  createCanvas(windowWidth, windowHeight)
-  bananaImg = createImg('/images/banana.png', 'banana image')
-  bananaImg.size(200, 100)
-  console.log(bananaImg)
-  frameRate(1)
+//   button = createButton('Try Me');
+//   button.position(width / 2, height / 2);
+//   button.mousePressed(greet);
 
-  heading = createElement('h2', 'Click The Banana!')
-  heading.position(width / 3, height / 4)
-}
+//   greeting = createElement('h2', 'Say Hello!');
+//   greeting.position(width / 2, height / 3);
 
-function draw() {
-  bananaImg.position(random(width), random(height))
-  bananaImg.mousePressed(youWon)
-}
+//   textAlign(CENTER);
+//   textSize(50);
+// }
 
-function youWon() {
-  heading.html('You Won!')
-  console.log('You Won')
-  bananaImg.remove()
+// function greet() {
+//   greeting.html('HELLO!');
 
-}
+//   for (let i = 0; i < 200; i++) {
+//     push();
+//     fill(random(255), 255, 255);
+//     translate(random(width), random(height));
+//     rotate(random(2 * PI));
+//     text('HELLO', 0, 0);
+//     pop();
+//   }
+// }
 
+// // CHASER GAME-- ACCESSING IMAGES ON CANVAS WITH CREATEIMG
+// let bananaImg;
+// let heading;
 
-//NAVIGATE LINKS
-let button;
+// function setup() {
+//   createCanvas(windowWidth, windowHeight);
+//   bananaImg = createImg('/images/banana.png', 'banana image');
+//   bananaImg.size(200, 100);
+//   console.log(bananaImg);
+//   frameRate(1);
 
-function setup() {
-  createCanvas(400, 400);
-  button = createButton('GO TO TWITTER');
-  button.position(width / 2, height / 2)
-  button.mousePressed(gotolink)
-}
+//   heading = createElement('h2', 'Click The Banana!');
+//   heading.position(width / 3, height / 4);
+// }
 
-function draw() {
-  background(220);
-}
+// function draw() {
+//   bananaImg.position(random(width), random(height));
+//   bananaImg.mousePressed(youWon);
+// }
 
-function gotolink() {
-  window.open('https://twitter.com/');
-}
+// function youWon() {
+//   heading.html('You Won!');
+//   console.log('You Won');
+//   bananaImg.remove();
+// }
 
-// NAVIGATE TO PAGES
-let button;
+// //NAVIGATE LINKS
+// let button;
 
-function setup() {
-  createCanvas(400, 400);
-  button = createButton('Play The Game');
-  button.position(width / 2, height / 2)
-  button.mousePressed(gotolink)
-}
+// function setup() {
+//   createCanvas(400, 400);
+//   button = createButton('GO TO TWITTER');
+//   button.position(width / 2, height / 2);
+//   button.mousePressed(gotolink);
+// }
 
-function draw() {
-  background(220);
-}
+// function draw() {
+//   background(220);
+// }
 
-function gotolink() {
-  window.location.href = '/main.html'; // Same tab
-}
+// function gotolink() {
+//   window.open('https://twitter.com/');
+// }
+
+// // NAVIGATE TO PAGES
+// let button;
+
+// function setup() {
+//   createCanvas(windowWidth, windowHeight);
+//   button = createButton('Play The Game');
+//   button.position(width / 2, height / 2);
+//   button.mousePressed(gotolink);
+// }
+
+// function draw() {
+//   background(220);
+// }
+
+// function gotolink() {
+//   window.location.href = '/main.html'; // Same tab
+// }
