@@ -1,0 +1,23 @@
+{
+  "name": "or-apcsp-p5js-lesson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "prettier": "^1.19.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mj-linane/OR-APCSP-P5JS-Lesson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mj-linane/OR-APCSP-P5JS-Lesson/issues"
+  },
+  "homepage": "https://github.com/mj-linane/OR-APCSP-P5JS-Lesson#readme"
+}
