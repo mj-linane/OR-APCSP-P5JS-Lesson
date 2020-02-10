@@ -22,4 +22,5 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   let titleText = createElement('h1', 'My lucky number is...');
   let numText = createElement('p', '14');
+  console.log(numText) // Find out what is inside of this newly created numText objects
 }
