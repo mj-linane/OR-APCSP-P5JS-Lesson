@@ -9,31 +9,46 @@ function setup() {
 
   // Setup Instructions heading
   const heading = createElement('h1', 'Click the bottons to change the score')
-  heading.position(width / 6, height / 6)
-  heading.style('font-family', 'roboto')
-  heading.style('font-size', '50px')
+  heading.style('font-family: roboto')
+  heading.style('font-size: 50px')
+  heading.style('text-align: center')
+  heading.style('position: absolute')
+  heading.style('width: 100%')
+  heading.style('top: 100px')
 
   // Setup Score Report
   scoreDisplay = createElement('h1', score)
-  scoreDisplay.position(width / 2.25, height / 2)
-  scoreDisplay.style('font-family', 'roboto')
-  scoreDisplay.style('font-size', '100px')
+  scoreDisplay.style('font-family: roboto')
+  scoreDisplay.style('font-size: 100px')
+  scoreDisplay.style('position: absolute')
+  scoreDisplay.style('width: 100%')
+  scoreDisplay.style('text-align: center')
+  scoreDisplay.style('top: 50%')
 
   // Setup Warning Box
-  scoreWarning = createElement('h1', ' ')
-  scoreWarning.position(width / 2.25, height / 2.5)
-  scoreWarning.style('font-family', 'roboto')
-  scoreWarning.style('font-size', '30')
+  scoreWarning = createElement('h1', 'just right')
+  scoreWarning.style('font-family: roboto')
+  scoreWarning.style('font-size: 30px')
+  scoreWarning.style('position: absolute')
+  scoreWarning.style('width: 100%')
+  scoreWarning.style('text-align: center')
+  scoreWarning.style('top: 40%')
 
   // Creates and sets up images
   const upImg = createImg('./images/up.svg', 'up image')
-  upImg.size(200, 200)
-  upImg.position(width / 8, height / 2)
+  upImg.size(150, 150)
+  upImg.style('position: absolute')
+  upImg.style('left: 200px')
+  upImg.style('top: 60%')
+
   upImg.mousePressed(increaseScore)
 
   const downImg = createImg('./images/down.svg', 'down image')
-  downImg.size(200, 200)
-  downImg.position(width / 1.5, height / 2)
+  downImg.size(150, 150)
+  downImg.style('position: absolute')
+  downImg.style('right: 200px')
+  downImg.style('top: 60%')
+
   downImg.mousePressed(decreaseScore)
 }
 
@@ -59,13 +74,11 @@ function checkScore() {
   if (score < 0) {
     scoreWarning.html('Too Small!')
     scoreWarning.style('color', 'red')
-
   }
 
   // If score goes above 10, display a warning
   if (score > 10) {
     scoreWarning.html('Too big!')
     scoreWarning.style('color', 'red')
-
   }
 }
