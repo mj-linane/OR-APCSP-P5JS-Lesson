@@ -1,12 +1,9 @@
 // Initialize Variables
 let bananaImg
-let title
 let scoreDisplay
 let livesDisplay
 let lives = 3
 let score = 0
-let difficultySlider
-let difficultyLabel
 
 function setup() {
   // Setup Canvas
@@ -16,7 +13,7 @@ function setup() {
   background('lightblue')
 
   // Setup Title
-  title = createElement('h1', 'CLICK THE BANANA 10 TIMES!')
+  const title = createElement('h1', 'CLICK THE BANANA 10 TIMES!')
   title.position(width / 2.75, height / 14)
 
   // Setup Lives Display
@@ -28,9 +25,9 @@ function setup() {
   scoreDisplay.position(width / 20, height / 10)
 
   // Creates Difficulty Slider
-  difficultyLabel = createElement('h4', 'Difficulty')
+  const difficultyLabel = createElement('h4', 'Difficulty')
   difficultyLabel.position(width / 20, height / 7)
-  difficultySlider = createSlider(1, 10, 1)
+  const difficultySlider = createSlider(1, 10, 1)
   difficultySlider.position(width / 20, height / 5)
 }
 
