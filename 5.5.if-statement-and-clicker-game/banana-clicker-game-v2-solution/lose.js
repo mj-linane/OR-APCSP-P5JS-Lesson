@@ -1,10 +1,11 @@
 function setup() {
   createCanvas(windowWidth, windowHeight)
   background('salmon')
-  const resultText = createElement('h1', 'You Lost :(')
+  const resultText = createElement('h1', 'YOU LOSE :(')
   resultText.position(width / 2.25, height / 2.5)
-  const playAgainBtn = createButton('Play Again?')
+  const playAgainBtn = createButton('PLAY AGAIN?')
   playAgainBtn.position(width / 2.15, height / 1.5)
+  playAgainBtn.size(100, 50)
   playAgainBtn.mousePressed(resetGameLink)
 
   // OPTIONAL: Retrieve game save data from local storage
