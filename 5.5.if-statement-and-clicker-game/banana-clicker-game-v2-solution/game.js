@@ -4,6 +4,7 @@ let scoreDisplay
 let livesDisplay
 let lives = 3
 let score = 0
+let difficultySlider
 
 function setup() {
   // Setup Canvas
@@ -27,7 +28,7 @@ function setup() {
   // Creates Difficulty Slider
   const difficultyLabel = createElement('h4', 'Difficulty')
   difficultyLabel.position(width / 20, height / 7)
-  const difficultySlider = createSlider(1, 10, 1)
+  difficultySlider = createSlider(1, 10, 1)
   difficultySlider.position(width / 20, height / 5)
 }
 
