@@ -3,7 +3,7 @@ let bananaImg
 let title
 let scoreDisplay
 let livesDisplay
-let lives = 10
+let lives = 3
 let score = 0
 let difficultySlider
 let difficultyLabel
@@ -41,7 +41,6 @@ function draw() {
   // Randomly Position Banana
   bananaImg.position(random(width), random(height))
   bananaImg.mousePressed(increaseScore)
-  checkLose()
 }
 
 function mousePressed() {
@@ -57,11 +56,12 @@ function increaseScore() {
 
 function decreaseLives() {
   lives = lives - 1
+  checkLose()
   livesDisplay.html('Lives Left: ' + lives)
 }
 
 function checkLose() {
-  if (lives == 0) {
+  if (lives <= 0) {
     window.location.href = 'lose.html'; // Same tab
     sessionStorage.setItem('score', score)
   }
