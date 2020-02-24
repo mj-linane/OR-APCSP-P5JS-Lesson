@@ -5,6 +5,8 @@ let livesDisplay
 let lives = 3
 let score = 0
 let difficultySlider
+let title
+let opacity = 1
 
 function setup() {
   // Setup Canvas
@@ -14,7 +16,7 @@ function setup() {
   background('lightblue')
 
   // Setup Title
-  const title = createElement('h1', 'CLICK THE BANANA 10 TIMES!')
+  title = createElement('h1', 'CLICK THE BANANA 10 TIMES!')
   title.position(width / 2.75, height / 14)
 
   // Setup Lives Display
@@ -39,6 +41,8 @@ function draw() {
   // Randomly Position Banana
   bananaImg.position(random(width), random(height))
   bananaImg.mousePressed(increaseScore)
+
+  titleFade()
 }
 
 function mousePressed() {
@@ -67,3 +71,7 @@ function checkLose() {
   }
 }
 
+function titleFade() {
+  title.style('opacity', opacity)
+  opacity = opacity - .05
+}
