@@ -68,17 +68,17 @@ function checkScore() {
   // If score is between 0 and 10, inclusive, displays an empty string inside of the html
   // Because this function is called after every click, it will display nothing by default and only change if one of the conditions below is met.
   scoreWarning.html(' ')
-  scoreWarning.style('color', 'inherit')
+  scoreWarning.style('color: inherit')
 
   // If score goes below 0, display a warning
   if (score < 0) {
     scoreWarning.html('Too Small!')
-    scoreWarning.style('color', 'red')
+    scoreWarning.style('color: red')
   }
 
   // If score goes above 10, display a warning
   if (score > 10) {
     scoreWarning.html('Too big!')
-    scoreWarning.style('color', 'red')
+    scoreWarning.style('color: red')
   }
 }
