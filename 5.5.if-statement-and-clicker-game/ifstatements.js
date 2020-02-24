@@ -1,5 +1,5 @@
 // Initialize Variables
-let score = 5
+let score = 3
 let scoreDisplay
 let scoreWarning
 
@@ -77,7 +77,7 @@ function checkScore() {
   }
 
   // If score goes above 10, display a warning
-  if (score > 10) {
+  if (score > 5) {
     scoreWarning.html('Too big!')
     scoreWarning.style('color: red')
   }
