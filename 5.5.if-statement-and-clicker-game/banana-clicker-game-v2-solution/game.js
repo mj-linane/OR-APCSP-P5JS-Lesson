@@ -18,15 +18,15 @@ function setup() {
   title.position(width / 2.75, height / 14)
 
   // Setup Lives Display
-  livesDisplay = createElement('h4', 'Lives Left: ' + lives)
+  livesDisplay = createElement('h4', 'LIVES: ' + lives)
   livesDisplay.position(width / 20, height / 14)
 
   // Setup Score Display
-  scoreDisplay = createElement('h4', 'Your score: ' + score)
+  scoreDisplay = createElement('h4', 'SCORE: ' + score)
   scoreDisplay.position(width / 20, height / 10)
 
   // Creates Difficulty Slider
-  const difficultyLabel = createElement('h4', 'Difficulty')
+  const difficultyLabel = createElement('h4', 'DIFFICULTY')
   difficultyLabel.position(width / 20, height / 7)
   difficultySlider = createSlider(1, 10, 1)
   difficultySlider.position(width / 20, height / 5)
