@@ -63,5 +63,8 @@ function decreaseLives() {
 function checkLose() {
   if (lives == 0) {
     window.location.href = 'lose.html'; // Same tab
+    sessionStorage.setItem('score', score)
   }
 }
+
+// Save In Session Storage
