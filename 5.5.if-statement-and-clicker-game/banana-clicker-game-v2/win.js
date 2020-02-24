@@ -1,7 +1,7 @@
 // OPTIONAL: Retrieve game save data from local storage
 let score = sessionStorage.getItem('score')
 
-// Initialize Variable
+// Initialize Variables
 let resultText
 let playAgainBtn
 
