@@ -78,34 +78,6 @@ function greet() {
   }
 }
 
-// CHASER GAME-- ACCESSING IMAGES ON CANVAS WITH CREATEIMG
-let bananaImg
-let heading
-
-function setup() {
-  createCanvas(windowWidth, windowHeight)
-  bananaImg = createImg('/images/banana.png', 'banana image')
-  bananaImg.size(200, 100)
-  console.log(bananaImg)
-  frameRate(1)
-
-  heading = createElement('h2', 'Click The Banana!')
-  heading.position(width / 3, height / 4)
-}
-
-function draw() {
-  bananaImg.position(random(width), random(height))
-  bananaImg.mousePressed(youWon)
-}
-
-function youWon() {
-  heading.html('You Won!')
-  console.log('You Won')
-  bananaImg.remove()
-
-}
-
-
 // NAVIGATE LINKS
 let button;
 
