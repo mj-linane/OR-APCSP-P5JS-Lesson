@@ -65,7 +65,7 @@ function decreaseLives() {
 }
 
 function checkWin() {
-  if (lives <= winningNum) {
+  if (score >= winningNum) {
     window.location.href = 'win.html'; // Same tab
 
     // Save In Session Storage
