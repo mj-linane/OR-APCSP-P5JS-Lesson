@@ -53,13 +53,13 @@ function mousePressed() {
 
 function increaseScore() {
   score = score + 1
-  scoreDisplay.html('SCORE: ' + score)
+  scoreDisplay.html('Your score: ' + score)
 }
 
 function decreaseLives() {
   lives = lives - 1
   checkLose()
-  livesDisplay.html('LIVES: ' + lives)
+  livesDisplay.html('Lives Left: ' + lives)
 }
 
 function checkLose() {
@@ -73,5 +73,5 @@ function checkLose() {
 
 function titleFade() {
   title.style('opacity', opacity)
-  opacity = opacity - .05
+  opacity = opacity - .15
 }
