@@ -1,11 +1,13 @@
-// Initialize Variables
+// Initialize UI Elements
 let bananaImg
 let scoreDisplay
 let livesDisplay
-let lives = 3
-let score = 0
 let difficultySlider
 let title
+
+// Initialize Game Variables
+let lives = 3
+let score = 0
 let opacity = 1
 let winningNum = 5
 
