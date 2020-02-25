@@ -5,7 +5,7 @@ function setup() {
   resultText.position(width / 2.25, height / 2.5)
   const playAgainBtn = createButton('PLAY AGAIN?')
   playAgainBtn.position(width / 2.15, height / 1.5)
-  playAgainBtn.style(100, 50)
+  playAgainBtn.size(100, 50)
   playAgainBtn.mousePressed(resetGameLink)
 
   // OPTIONAL: Retrieve game save data from local storage
