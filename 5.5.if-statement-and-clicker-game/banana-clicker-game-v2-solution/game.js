@@ -53,13 +53,13 @@ function mousePressed() {
 
 function increaseScore() {
   score = score + 1
-  scoreDisplay.html('Your score: ' + score)
+  scoreDisplay.html('SCORE: ' + score)
 }
 
 function decreaseLives() {
   lives = lives - 1
   checkLose()
-  livesDisplay.html('Lives Left: ' + lives)
+  livesDisplay.html('LIVES: ' + lives)
 }
 
 function checkLose() {
