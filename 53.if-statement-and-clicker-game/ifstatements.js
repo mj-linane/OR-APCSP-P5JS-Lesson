@@ -75,7 +75,7 @@ function checkScore() {
     scoreWarning.html('Too Small!')
     scoreWarning.style('color: red')
   }
-
+  
   // If score goes above 10, display a warning
   if (score > 5) {
     scoreWarning.html('Too big!')
