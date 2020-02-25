@@ -7,6 +7,7 @@ let score = 0
 let difficultySlider
 let title
 let opacity = 1
+let winningNum = 5
 
 function setup() {
   // Setup Canvas
@@ -16,7 +17,7 @@ function setup() {
   background('lightblue')
 
   // Setup Title
-  title = createElement('h1', 'CLICK THE BANANA 10 TIMES!')
+  title = createElement('h1', 'CLICK THE BANANA ' + winningNum + ' TIMES!')
   title.position(width / 2.75, height / 14)
 
   // Setup Lives Display
@@ -53,13 +54,23 @@ function mousePressed() {
 
 function increaseScore() {
   score = score + 1
-  scoreDisplay.html('Your score: ' + score)
+  checkWin()
+  scoreDisplay.html('SCORE: ' + score)
 }
 
 function decreaseLives() {
   lives = lives - 1
   checkLose()
-  livesDisplay.html('Lives Left: ' + lives)
+  livesDisplay.html('LIVES: ' + lives)
+}
+
+function checkWin() {
+  if (lives <= winningNum) {
+    window.location.href = 'win.html'; // Same tab
+
+    // Save In Session Storage
+    sessionStorage.setItem('score', score)
+  }
 }
 
 function checkLose() {
