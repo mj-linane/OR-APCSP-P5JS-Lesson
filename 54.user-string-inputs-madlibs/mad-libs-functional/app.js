@@ -1,4 +1,3 @@
-let drawOnYIncrementor = 200
 let outputDiv
 let inputDiv
 
@@ -11,9 +10,9 @@ function setup() {
   createOutputBox()
   outputDiv.hide()
 
-  inputField("animal", "I once had a tiny, little pet. It was a ", ". It small, but rare. It was pretty ugly, and not that bright. It liked to eat dirt.")
+  addTopic("animal", "I once had a tiny, little pet. It was a ", ". It small, but rare. It was pretty ugly.")
 
-  inputField("place", "I once lived with my pet in a place called ", ". Never have I been to a more disgusting place where Hippies roam wild.")
+  addTopic("place", "I once lived with my pet in a place called ", ". Never have I been to a more disgusting place where gnomes roam wild.")
 
   createDisplayBtn()
 }
@@ -78,7 +77,7 @@ function createDisplayBtn() {
   }
 }
 
-function inputField(topic, intro, detail) {
+function addTopic(topic, intro, detail) {
   let inputLabel = createElement('p', 'Name a ' + topic.toUpperCase())
   inputLabel.parent(inputDiv)
   inputLabel.style('position: relative')
@@ -86,20 +85,13 @@ function inputField(topic, intro, detail) {
   inputLabel.style('margin-right: auto')
   inputLabel.style('padding-top: 30px')
 
-  // let inputLabelY = (drawOnYIncrementor - 40) + 'px'
-  // inputLabel.style('top', inputLabelY)
-
   let input = createInput(' ')
   input.parent(inputDiv)
   input.style('position: relative')
   input.style('margin-left: auto')
   input.style('margin-right: auto')
   input.style('margin-top: 10px')
-  // input.style('top', drawOnYIncrementor + 'px')
   input.size(250, 25)
-
-
-  // drawOnYIncrementor += 100
 
   input.changed(updateOutputHandler)
 
