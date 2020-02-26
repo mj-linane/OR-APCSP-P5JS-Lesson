@@ -9,7 +9,7 @@ function setup() {
   const inputsDivUI = select('#inputs')
   const submitBtn = select('#submitBtn')
 
-  const animalOutputText = "I had an animal named " + animalUI + ' .It was a disguisting animal'
+  const animalOutputText = "I had an animal named " + animalUI + ' .It was a disgusting animal'
   const placeOutputText = "I once lived in " + placeUI + ' . it was a tech paradise.'
 
   submitBtn.mousePressed(displayOutput)
@@ -21,6 +21,6 @@ function setup() {
     outputDivUI.appendChild(animalOutput)
 
     const placeOutput = createElement('p', placeOutputText)
-    output  `DivUI.html(placeOutput)
+    outputDivUI.html(placeOutput)
   }
 }
