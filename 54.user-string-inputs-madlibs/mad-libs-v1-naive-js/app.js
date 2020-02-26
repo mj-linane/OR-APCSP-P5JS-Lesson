@@ -1,3 +1,5 @@
+// NAIVE APPROACH -- Nothing tricky, nothing fancy, nothing particularly wise.
+
 // Initializes input variables
 let input1
 let input2
