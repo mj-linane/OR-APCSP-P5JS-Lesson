@@ -13,7 +13,7 @@ function setup() {
 
   inputField("animal", "I once had a tiny, little pet. It was a ", ". It small, but rare. It was pretty ugly, and not that bright. It liked to eat dirt.")
 
-  inputField("place", "I once lived with my pet in a place called ", ". Never have I been to a more distuisting place where Hippies roam wild.")
+  inputField("place", "I once lived with my pet in a place called ", ". Never have I been to a more disgusting place where Hippies roam wild.")
 
   createDisplayBtn()
 }
