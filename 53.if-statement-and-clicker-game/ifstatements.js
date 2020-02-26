@@ -8,7 +8,7 @@ function setup() {
   background('lightgray')
 
   // Setup Instructions heading
-  const heading = createElement('h1', 'Click the bottons to change the score')
+  const heading = createElement('h1', 'Click the buttons to change the score')
   heading.style('font-family: roboto')
   heading.style('font-size: 50px')
   heading.style('text-align: center')
@@ -26,7 +26,7 @@ function setup() {
   scoreDisplay.style('top: 50%')
 
   // Setup Warning Box
-  scoreWarning = createElement('h1', 'just right')
+  scoreWarning = createElement('h1', ' ')
   scoreWarning.style('font-family: roboto')
   scoreWarning.style('font-size: 30px')
   scoreWarning.style('position: absolute')
