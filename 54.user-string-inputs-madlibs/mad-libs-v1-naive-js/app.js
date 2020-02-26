@@ -1,4 +1,4 @@
-// NAIVE APPROACH -- Nothing tricky, nothing fancy, nothing particularly wise.
+// NAIVE APPROACH -- Nothing tricky, nothing fancy, nothing particularly wise.p
 
 // Initializes input variables
 let input1
