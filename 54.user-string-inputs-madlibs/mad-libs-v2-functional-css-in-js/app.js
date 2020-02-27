@@ -1,5 +1,5 @@
-let outputDiv
-let inputDiv
+let outputDivUI
+let inputDivUI
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
@@ -8,95 +8,95 @@ function setup() {
   createHeadings()
   createInputBox()
   createOutputBox()
-  outputDiv.hide()
+  outputDivUI.hide()
 
-  addTopic("animal", "I once had a tiny, little pet. It was a ", ". It small, but rare. It was pretty ugly.")
+  addTopic("place", "I once lived with my pet in a place called ", ". Never have I been to a more disgusting place where tyrannical gnomes rule.")
 
-  createDisplayBtn()
+  createOutputDisplayBtn()
 }
 
 function createHeadings() {
-  const title = createElement('h1', 'Mad Libs Game')
-  title.style('position: absolute')
-  title.style('text-align: center')
-  title.style('top: 30px')
-  title.style('margin-left: auto')
-  title.style('margin-right: auto')
+  const titleUI = createElement('h1', 'Mad Libs Game')
+  titleUI.style('position: absolute')
+  titleUI.style('text-align: center')
+  titleUI.style('top: 30px')
+  titleUI.style('margin-left: auto')
+  titleUI.style('margin-right: auto')
 
-  const subtitle = createElement('h4', 'Enter Some Text to See The Result')
-  subtitle.style('position: absolute')
-  subtitle.style('text-align: center')
-  subtitle.style('top: 70px')
-  subtitle.style('margin-left: auto')
-  subtitle.style('margin-right: auto')
+  const subtitleUI = createElement('h4', 'Enter Some Text to See The Result')
+  subtitleUI.style('position: absolute')
+  subtitleUI.style('text-align: center')
+  subtitleUI.style('top: 70px')
+  subtitleUI.style('margin-left: auto')
+  subtitleUI.style('margin-right: auto')
 }
 
 function createInputBox() {
-  inputDiv = createDiv('')
-  inputDiv.style('position: absolute')
-  inputDiv.style('display: flex')
-  inputDiv.style('flex-direction: column')
-  inputDiv.style('margin-left: auto')
-  inputDiv.style('margin-right: auto')
-  inputDiv.style('padding: 30px')
-  inputDiv.style('width: 500px')
-  inputDiv.style('top: 200px')
-  inputDiv.style('background-color: white')
+  inputDivUI = createDiv('')
+  inputDivUI.style('position: absolute')
+  inputDivUI.style('display: flex')
+  inputDivUI.style('flex-direction: column')
+  inputDivUI.style('margin-left: auto')
+  inputDivUI.style('margin-right: auto')
+  inputDivUI.style('padding: 30px')
+  inputDivUI.style('width: 500px')
+  inputDivUI.style('top: 200px')
+  inputDivUI.style('background-color: white')
 }
 
 function createOutputBox() {
-  outputDiv = createDiv('')
-  outputDiv.style('position: absolute')
-  outputDiv.style('margin-left: auto')
-  outputDiv.style('margin-right: auto')
-  outputDiv.style('width: 500px')
-  outputDiv.style('top: 300px')
-  outputDiv.style('background-color: white')
-  outputDiv.style('padding: 60px')
+  outputDivUI = createDiv('')
+  outputDivUI.style('position: absolute')
+  outputDivUI.style('margin-left: auto')
+  outputDivUI.style('margin-right: auto')
+  outputDivUI.style('width: 500px')
+  outputDivUI.style('top: 300px')
+  outputDivUI.style('background-color: white')
+  outputDivUI.style('padding: 60px')
 }
 
-function createDisplayBtn() {
+function createOutputDisplayBtn() {
   // Creates next button and styles it
-  let displayBtn = createButton('NEXT')
-  displayBtn.parent(inputDiv)
-  displayBtn.size(100, 50)
-  displayBtn.mousePressed(showOutputHandler)
-  displayBtn.style('position: relative')
-  displayBtn.style('margin-top: 60px')
-  displayBtn.style('margin-left: auto')
-  displayBtn.style('margin-right: auto')
-  displayBtn.style('background-color: red')
-  displayBtn.style('color: white')
-  displayBtn.style('font-size: 14px')
+  let outputDisplayBtn = createButton('NEXT')
+  outputDisplayBtn.parent(inputDivUI)
+  outputDisplayBtn.size(100, 50)
+  outputDisplayBtn.mousePressed(showOutputHandler)
+  outputDisplayBtn.style('position: relative')
+  outputDisplayBtn.style('margin-top: 60px')
+  outputDisplayBtn.style('margin-left: auto')
+  outputDisplayBtn.style('margin-right: auto')
+  outputDisplayBtn.style('background-color: red')
+  outputDisplayBtn.style('color: white')
+  outputDisplayBtn.style('font-size: 14px')
 
   function showOutputHandler() {
-    outputDiv.show()
-    inputDiv.hide()
+    outputDivUI.show()
+    inputDivUI.hide()
   }
 }
 
 function addTopic(topic, intro, detail) {
   let inputLabel = createElement('p', 'Name a ' + topic.toUpperCase())
-  inputLabel.parent(inputDiv)
+  inputLabel.parent(inputDivUI)
   inputLabel.style('position: relative')
   inputLabel.style('margin-left: auto')
   inputLabel.style('margin-right: auto')
   inputLabel.style('padding-top: 30px')
 
-  let input = createInput(' ')
-  input.parent(inputDiv)
-  input.style('position: relative')
-  input.style('margin-left: auto')
-  input.style('margin-right: auto')
-  input.style('margin-top: 10px')
-  input.size(250, 25)
+  let inputFieldUI = createInput(' ')
+  inputFieldUI.parent(inputDivUI)
+  inputFieldUI.style('position: relative')
+  inputFieldUI.style('margin-left: auto')
+  inputFieldUI.style('margin-right: auto')
+  inputFieldUI.style('margin-top: 10px')
+  inputFieldUI.size(250, 25)
 
-  input.changed(updateOutputHandler)
+  inputFieldUI.changed(updateOutputHandler)
 
-  let output = createP('')
-  output.parent(outputDiv)
+  let output = createP(' ')
+  output.parent(outputDivUI)
 
   function updateOutputHandler() {
-    output.html(intro + input.value() + detail)
+    output.html(intro + inputFieldUI.value() + detail)
   }
 }
