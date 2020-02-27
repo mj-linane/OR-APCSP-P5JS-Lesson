@@ -1,12 +1,10 @@
-let s
-let num = 5
 let string = 'my name is MJ   '
 
 // CHECK LENGTH
 console.log(string.length)
 
-
 // CONVERSION
+let num = 5
 s = num.toString()
 console.log(typeof s)
 
@@ -37,3 +35,8 @@ s = string.slice(0, 3)
 // Trim length and measure
 s = string.trim()
 console.log(s.length)
+
+// CONVERT TO NUMBER
+string = 3
+num = Number(string)
+console.log(typeof num, num)
