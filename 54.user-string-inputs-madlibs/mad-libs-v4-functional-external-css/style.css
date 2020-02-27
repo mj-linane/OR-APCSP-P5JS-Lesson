@@ -31,6 +31,18 @@ h4 {
   margin-right: auto;
 }
 
+button {
+  position: relative;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 100px;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+}
+
 #inputs {
   position: absolute;
   top: 150px;
@@ -51,18 +63,6 @@ h4 {
   top: 300px;
   background-color: white;
   padding: 60px;
-}
-
-button {
-  position: relative;
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 50px;
-  width: 100px;
-  background-color: red;
-  color: white;
-  font-size: 14px;
 }
 
 #input-label {

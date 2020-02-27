@@ -7,13 +7,11 @@ function setup() {
 
   addInputOutputElements()
 
-  addTopic("animal", "I once had a tiny, little pet. It was a ", ". It small, but rare. It was pretty ugly.")
-
-  addTopic("place", "I once lived with my pet in a place called ", ". Never have I been to a more disgusting place where gnomes roam wild.")
+  addTopic("place", "I once lived with my pet in a place called ", ". Never have I been to a more disgusting place where tyrannical gnomes rule.")
 
   // Creates next button and styles it
-  let displayBtn = createButton('NEXT').parent(inputDivUI)
-  displayBtn.mousePressed(showOutputHandler)
+  let outputDisplayBtn = createButton('NEXT').parent(inputDivUI)
+  outputDisplayBtn.mousePressed(showOutputHandler)
 
   function showOutputHandler() {
     outputDivUI.show()
@@ -37,7 +35,7 @@ function addTopic(topic, intro, detail) {
 
   inputFieldUI.changed(updateOutputHandler)
 
-  let output = createP('').parent(outputDivUI)
+  let output = createP(' ').parent(outputDivUI)
 
   function updateOutputHandler() {
     output.html(intro + inputFieldUI.value() + detail)
