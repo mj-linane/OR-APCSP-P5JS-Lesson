@@ -12,8 +12,6 @@ function setup() {
 
   addTopic("animal", "I once had a tiny, little pet. It was a ", ". It small, but rare. It was pretty ugly.")
 
-  addTopic("place", "I once lived with my pet in a place called ", ". Never have I been to a more disgusting place where gnomes roam wild.")
-
   createDisplayBtn()
 }
 
