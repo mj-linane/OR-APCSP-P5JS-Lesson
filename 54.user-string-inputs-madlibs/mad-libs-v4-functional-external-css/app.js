@@ -32,7 +32,6 @@ function addTopic(topic, intro, detail) {
   createElement('p', 'Name a ' + topic.toUpperCase()).id('input-label').parent(inputDivUI)
 
   let inputFieldUI = createInput(' ').id('input-field').parent(inputDivUI)
-
   inputFieldUI.changed(updateOutputHandler)
 
   let output = createP(' ').parent(outputDivUI)
