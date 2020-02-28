@@ -1,5 +1,3 @@
-let startButton
-
 function setup() {
   createCanvas(windowWidth, windowHeight)
 
