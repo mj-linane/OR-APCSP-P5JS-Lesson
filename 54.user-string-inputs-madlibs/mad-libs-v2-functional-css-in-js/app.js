@@ -10,7 +10,11 @@ function setup() {
   createOutputBox()
   outputDivUI.hide()
 
-  addTopic("place", "I once lived with my pet in a place called ", ". Never have I been to a more disgusting place where tyrannical gnomes rule.")
+  addTopic(
+    'place',
+    'I once lived with my pet in a place called ',
+    '. Never have I been to a more disgusting place where tyrannical gnomes rule.'
+  )
 
   createOutputDisplayBtn()
 }

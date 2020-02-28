@@ -1,7 +1,7 @@
-let startButton;
+let startButton
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight)
 
   // Create and Style Header
   const heading = createElement('h1', 'Welcome to Catch The Banana Game!')
@@ -12,14 +12,14 @@ function setup() {
   heading.style('font-family: roboto')
 
   // Create and Style Button
-  button = createButton('START');
+  button = createButton('START')
   button.style('background-color: lightblue')
   button.size(100, 50)
   button.style('position: absolute')
-  button.mousePressed(startGame);
-  background(220);
+  button.mousePressed(startGame)
+  background(220)
 }
 
 function startGame() {
-  window.location.href = 'game.html'; // Same tab
+  window.location.href = 'game.html' // Same tab
 }

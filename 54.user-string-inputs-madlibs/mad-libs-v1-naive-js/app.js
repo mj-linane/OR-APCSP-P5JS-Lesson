@@ -87,11 +87,37 @@ function createDisplayBtn() {
     text4 = input4.value()
     text5 = input5.value()
 
-    output1.html('I once had a tiny, little pet. It small, but rare ' + text1.trim().toLowerCase() + '. What made this animal special is that it could see in the dark.')
-    output2.html('Together we used to live in a little, smelly village called ' + text2.trim() + "It isn't much to look at and the people there can be really mean.")
-    output3.html('I named this beloved animal ' + text3.trim() + ' after my grandmother of the same name.')
-    output4.html('I used to feed ' + text3.trim().toLowerCase() + ' all sorts of ' + text4.trim() + '.')
-    output5.html("But then I couldn't stand " + text3.trim() + ' anymore, so I shipped ' + text3.trim() + ' to ' + text5.trim() + '.')
+    output1.html(
+      'I once had a tiny, little pet. It small, but rare ' +
+        text1.trim().toLowerCase() +
+        '. What made this animal special is that it could see in the dark.'
+    )
+    output2.html(
+      'Together we used to live in a little, smelly village called ' +
+        text2.trim() +
+        "It isn't much to look at and the people there can be really mean."
+    )
+    output3.html(
+      'I named this beloved animal ' +
+        text3.trim() +
+        ' after my grandmother of the same name.'
+    )
+    output4.html(
+      'I used to feed ' +
+        text3.trim().toLowerCase() +
+        ' all sorts of ' +
+        text4.trim() +
+        '.'
+    )
+    output5.html(
+      "But then I couldn't stand " +
+        text3.trim() +
+        ' anymore, so I shipped ' +
+        text3.trim() +
+        ' to ' +
+        text5.trim() +
+        '.'
+    )
 
     input1.remove()
     input2.remove()

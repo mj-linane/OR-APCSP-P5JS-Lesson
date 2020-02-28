@@ -7,7 +7,7 @@ function draw() {
 }
 
 function cross() {
-  strokeWeight(5);
+  strokeWeight(5)
   line(100, 100, 150, 100)
   line(125, 75, 125, 125)
 }
@@ -20,7 +20,7 @@ function drawCrosses() {
   cross()
   translate(0, 200)
   stroke('red')
-  cross();
+  cross()
   translate(-200, 0)
   stroke('black')
   cross()

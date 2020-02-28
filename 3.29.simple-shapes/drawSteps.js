@@ -4,7 +4,7 @@ function setup() {
 function draw() {
   // drawSide();
   // drawSide();
-  drawLeftSteps();
+  drawLeftSteps()
 }
 
 function drawLStep() {
@@ -13,13 +13,13 @@ function drawLStep() {
 }
 
 function drawLSide() {
-  drawStep();
-  translate(50, -50);
-  drawStep();
-  drawStep();
-  translate(50, -50);
-  drawStep();
-  line(150, 250, 200, 250);
+  drawStep()
+  translate(50, -50)
+  drawStep()
+  drawStep()
+  translate(50, -50)
+  drawStep()
+  line(150, 250, 200, 250)
 }
 
 function drawLeftSteps() {
@@ -27,4 +27,3 @@ function drawLeftSteps() {
   rect(100, 200, 50, 100)
   rect(150, 150, 50, 150)
 }
-

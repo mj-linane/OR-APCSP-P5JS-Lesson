@@ -68,7 +68,7 @@ function decreaseLives() {
 
 function checkWin() {
   if (score >= winningNum) {
-    window.location.href = 'win.html'; // Same tab
+    window.location.href = 'win.html' // Same tab
 
     // Save In Session Storage
     sessionStorage.setItem('score', score)
@@ -77,7 +77,7 @@ function checkWin() {
 
 function checkLose() {
   if (lives <= 0) {
-    window.location.href = 'lose.html'; // Same tab
+    window.location.href = 'lose.html' // Same tab
 
     // Save In Session Storage
     sessionStorage.setItem('score', score)
@@ -86,5 +86,5 @@ function checkLose() {
 
 function titleFade() {
   title.style('opacity', opacity)
-  opacity = opacity - .15
+  opacity = opacity - 0.15
 }

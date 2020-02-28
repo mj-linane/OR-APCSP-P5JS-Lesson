@@ -15,5 +15,5 @@ function setup() {
 }
 
 function resetGameLink() {
-  window.location.href = 'game.html'; // Same tab
+  window.location.href = 'game.html' // Same tab
 }
