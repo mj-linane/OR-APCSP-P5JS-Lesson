@@ -6,7 +6,6 @@ console.log(string.length)
 // CONVERSION
 let num = 5
 let s = num.toString()
-console.log(typeof s)
 
 // SEARCHING STRINGS
 // Searches for an element, returns -1 if not found, otherwise first index
@@ -16,7 +15,7 @@ s = string.search('M')
 s = string.startsWith('m')
 
 // Checks to see if the string includes the value, returns true/false
-s = string.includes('m')
+s = string.includes('MJ')
 
 // MODIFYING STRINGS
 // Lower case conversion
@@ -25,17 +24,23 @@ s = string.toLowerCase()
 // Uppercase conversion
 s = string.toUpperCase()
 
+// Cuts out part of a string
+s = string.slice(0, 4)
+// Trim length and measure
+s = string.trim()
+
+// Combining Strings
+s = string + "is great" + num + "years \n old"
 // Concatenate Strings
 s = string.concat('How Are you?')
 
-// Cuts out part of a string
-s = string.slice(0, 3)
+s = `I am ${num} 
+years old
+this is awesome
+${string}
+`
 
-// Trim length and measure
-s = string.trim()
-console.log(s.length)
-
+console.log(s)
 // CONVERT TO NUMBER
 string = 3
 num = Number(string)
-console.log(typeof num, num)
