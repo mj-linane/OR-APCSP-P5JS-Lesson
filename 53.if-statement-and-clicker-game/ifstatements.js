@@ -53,13 +53,13 @@ function setup() {
 }
 
 function increaseScore() {
-  score = score + 1
+  score += 1
   scoreDisplay.html(score)
   checkScore()
 }
 
 function decreaseScore() {
-  score = score - 1
+  score -= 1
   scoreDisplay.html(score)
   checkScore()
 }

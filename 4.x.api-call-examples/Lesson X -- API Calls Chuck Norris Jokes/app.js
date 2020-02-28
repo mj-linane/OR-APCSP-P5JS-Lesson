@@ -1,9 +1,9 @@
 let json
 let joke
-const api_url = 'https://api.chucknorris.io/jokes/random'
+const apiURL = 'https://api.chucknorris.io/jokes/random'
 
 function preload() {
-  json = loadJSON(api_url)
+  json = loadJSON(apiURL)
 }
 
 function setup() {

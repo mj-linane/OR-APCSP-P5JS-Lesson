@@ -20,21 +20,21 @@ function draw() {
 
   // rectMode(CENTER);
   // Have greater control over the number of squares being drawn by using a for loop
-  for (let i = 0; i < 23; i++) {
+  for (let i = 0; i < 23; i += 1) {
     rotate(angle)
     square(0, 0, 150)
   }
 }
 
-function setup() {
-  createCanvas(600, 120)
-  noStroke()
-}
+// function setup() {
+//   createCanvas(600, 120)
+//   noStroke()
+// }
 
-function draw() {
-  background(180)
+// function draw() {
+//   background(180)
 
-  for (let x = 100; x < width; x = x + 100) {
-    ellipse(x, 60, 40, 40)
-  }
-}
+//   for (let x = 100; x < width; x = x + 100) {
+//     ellipse(x, 60, 40, 40)
+//   }
+// }

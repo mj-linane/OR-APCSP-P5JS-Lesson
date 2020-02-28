@@ -1,10 +1,10 @@
 let json
 let jokeSetup
 let jokePunchline
-const api_url = 'https://official-joke-api.appspot.com/random_joke'
+const apiURL = 'https://official-joke-api.appspot.com/random_joke'
 
 function preload() {
-  json = loadJSON(api_url)
+  json = loadJSON(apiURL)
 }
 
 function setup() {

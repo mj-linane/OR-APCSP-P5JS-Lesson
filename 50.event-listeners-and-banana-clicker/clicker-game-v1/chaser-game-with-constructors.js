@@ -28,8 +28,9 @@ function Fruit(x, y, img) {
   this.x = x
   this.y = y
   image(img, this.x, this.y, 100, 100)
-  this.clicked = function() {
-    let d = dist(mouseX, mouseY, this.x, this.y)
+  this.clicked = function () {
+    const d = dist(mouseX, mouseY, this.x, this.y)
+
     if (d < 100) {
       console.log('you won!')
     }

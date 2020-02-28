@@ -1,9 +1,9 @@
 let json
 let fact
-const api_url = ''
+const apiURL = ''
 
 function preload() {
-  json = loadJSON(api_url)
+  json = loadJSON(apiURL)
 }
 
 function setup() {

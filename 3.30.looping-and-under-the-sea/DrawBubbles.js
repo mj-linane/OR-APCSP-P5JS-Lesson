@@ -10,9 +10,9 @@ function draw() {
 }
 
 function drawAllBubbles() {
-  for (let i = 0; i < 100; i++) {
-    let x = random(width)
-    let y = random(height)
+  for (let i = 0; i < 100; i += 1) {
+    const x = random(width)
+    const y = random(height)
     translate(x, y)
     drawBubble()
     translate(-x, -y)

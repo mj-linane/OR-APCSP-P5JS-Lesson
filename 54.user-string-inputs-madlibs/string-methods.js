@@ -5,7 +5,7 @@ console.log(string.length)
 
 // CONVERSION
 let num = 5
-s = num.toString()
+let s = num.toString()
 console.log(typeof s)
 
 // SEARCHING STRINGS
@@ -17,7 +17,6 @@ s = string.startsWith('m')
 
 // Checks to see if the string includes the value, returns true/false
 s = string.includes('m')
-
 
 // MODIFYING STRINGS
 // Lower case conversion

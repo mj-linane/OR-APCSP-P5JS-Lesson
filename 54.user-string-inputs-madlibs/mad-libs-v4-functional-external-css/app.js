@@ -16,7 +16,7 @@ function setup() {
   addTopic(
     'place',
     'I once lived with my pet in a place called ',
-    '. Never have I been to a more disgusting place where tyrannical gnomes rule.'
+    '. Never have I been to a more disgusting place where tyrannical gnomes rule.',
   )
 
   // Creates next button and styles it
@@ -30,7 +30,7 @@ function showOutputHandler() {
 }
 
 function addTopic(topic, intro, detail) {
-  createElement('p', 'Name a ' + topic.toUpperCase())
+  createElement('p', `Name a ${topic.toUpperCase()}`)
     .id('input-label')
     .parent(inputDivUI)
   // Using newer template literal instead of +

@@ -1,12 +1,11 @@
 let json
-let joke
-const api_url = 'https://geek-jokes.sameerkumar.website/api'
+const apiURL = 'https://geek-jokes.sameerkumar.website/api'
 
 function preload() {
-  json = loadJSON(api_url)
+  json = loadJSON(apiURL)
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
-  document.getElementById('joke').innerHTML = json['keys']
+  document.getElementById('joke').innerHTML = json.keys
 }
