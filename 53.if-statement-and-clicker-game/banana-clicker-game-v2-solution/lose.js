@@ -10,7 +10,7 @@ function setup() {
 
   // OPTIONAL: Retrieve game save data from local storage
   const score = sessionStorage.getItem('score')
-  const scoreDisplay = createElement('h2', 'Final Score: ' + score)
+  const scoreDisplay = createElement('h2', `Final Score: ${score}`)
   scoreDisplay.position(width / 2.25, height / 2)
 }
 

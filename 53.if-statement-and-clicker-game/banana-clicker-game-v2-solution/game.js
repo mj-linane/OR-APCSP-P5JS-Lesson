@@ -9,7 +9,7 @@ let title
 let lives = 3
 let score = 0
 let opacity = 1
-let winningNum = 5
+const winningNum = 5
 
 function setup() {
   // Setup Canvas
@@ -19,15 +19,15 @@ function setup() {
   background('lightblue')
 
   // Setup Title
-  title = createElement('h1', 'CLICK THE BANANA ' + winningNum + ' TIMES!')
+  title = createElement('h1', `CLICK THE BANANA ${winningNum} TIMES!`)
   title.position(width / 2.75, height / 14)
 
   // Setup Lives Display
-  livesDisplay = createElement('h4', 'LIVES: ' + lives)
+  livesDisplay = createElement('h4', `LIVES: ${lives}`)
   livesDisplay.position(width / 20, height / 14)
 
   // Setup Score Display
-  scoreDisplay = createElement('h4', 'SCORE: ' + score)
+  scoreDisplay = createElement('h4', `SCORE: ${score}`)
   scoreDisplay.position(width / 20, height / 10)
 
   // Creates Difficulty Slider
@@ -55,15 +55,15 @@ function mousePressed() {
 }
 
 function increaseScore() {
-  score = score + 1
+  score += 1
   checkWin()
-  scoreDisplay.html('SCORE: ' + score)
+  scoreDisplay.html(`SCORE: ${score}`)
 }
 
 function decreaseLives() {
-  lives = lives - 1
+  lives -= 1
   checkLose()
-  livesDisplay.html('LIVES: ' + lives)
+  livesDisplay.html(`LIVES: ${lives}`)
 }
 
 function checkWin() {
@@ -86,5 +86,5 @@ function checkLose() {
 
 function titleFade() {
   title.style('opacity', opacity)
-  opacity = opacity - 0.15
+  opacity -= 0.15
 }

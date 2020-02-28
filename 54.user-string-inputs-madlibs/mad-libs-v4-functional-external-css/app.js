@@ -22,6 +22,14 @@ function setup() {
   // Creates next button and styles it
   const outputDisplayBtn = createButton('NEXT').parent(inputDivUI)
   outputDisplayBtn.mousePressed(showOutputHandler)
+
+  const inputDisplayBtn = createButton('GO BACK').parent(outputDivUI)
+  inputDisplayBtn.mousePressed(showInputHandler)
+}
+
+function showInputHandler() {
+  output.inputDivUI.hide()
+  inputDivUI.show()
 }
 
 function showOutputHandler() {
