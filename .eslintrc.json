@@ -1,28 +1,30 @@
 {
   "env": {
     "browser": true,
-    "amd": true,
-    "es6": true
-  },
-  "globals": {
-    "p5": true,
-    "setup": "readonly"
+    "es6": true,
+    "amd": true
   },
   "root": true,
   "extends": [
-    "airbnb-base",
     "eslint:recommended",
+    "prettier",
+    "airbnb-base",
     "p5js",
     "p5js/dom",
-    "prettier"
+    "p5js/sound"
   ],
   "plugins": ["prettier"],
+
+  "globals": {
+    "p5": "off",
+    "setup": true,
+    "draw": true
+  },
   "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
+    "ecmaVersion": 2018
   },
   "rules": {
-    "prettier/prettier": ["error"],
+    "semi": ["error", "never"],
     "no-cond-assign": [2, "except-parens"],
     "eqeqeq": ["error", "smart"],
     "no-use-before-define": [
@@ -34,8 +36,19 @@
     "new-cap": 0,
     "no-caller": 2,
     "no-undef": 0,
-    "no-unused-vars": ["error", { "args": "none" }],
     "no-empty": ["error", { "allowEmptyCatch": true }],
-    "no-console": "off"
+    "no-console": "off",
+    // "no-unused-vars": ["error", { "args": "none" }],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "local",
+        "args": "after-used",
+        "ignoreRestSiblings": false,
+
+        // Add p5 global functions to this regex with after an "|", which means: "or"
+        "varsIgnorePattern": "setup|draw|mouseClicked|preload"
+      }
+    ]
   }
 }
