@@ -67,7 +67,7 @@ function addTopic(topic, intro, detail, uppercase, num) {
     if (num === true) {
       // / convert input to type Number
       userInput = Number(userInput)
-      userInput = `You look ${userInput + 30} years old! `
+      userInput = `You look ${userInput + 30} years old!`
     }
 
     output.html(`${intro} ${userInput} ${detail}`)
