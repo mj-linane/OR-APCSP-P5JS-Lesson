@@ -28,7 +28,7 @@ function setup() {
 }
 
 function showInputHandler() {
-  output.inputDivUI.hide()
+  outputDivUI.hide()
   inputDivUI.show()
 }
 
