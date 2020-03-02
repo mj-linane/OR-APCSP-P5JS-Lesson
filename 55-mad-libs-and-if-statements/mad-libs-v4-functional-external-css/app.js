@@ -12,6 +12,15 @@ function setup() {
     'I once lived with my pet in a place called ',
     '. Never have I been to a more disgusting place where tyrannical gnomes rule.',
     false,
+    false,
+  )
+
+  addTopic(
+    'your age',
+    'You look ',
+    'I cannot believe how old you look',
+    false,
+    true,
   )
 
   // Creates next button and styles it
@@ -34,7 +43,7 @@ function addInputOutputElements() {
   outputDivUI.hide()
 }
 
-function addTopic(topic, intro, detail, uppercase) {
+function addTopic(topic, intro, detail, uppercase, num) {
   createElement('p', `Name a ${topic.toUpperCase()}`)
     .id('input-label')
     .parent(inputDivUI)
@@ -53,6 +62,12 @@ function addTopic(topic, intro, detail, uppercase) {
     if (uppercase === true) {
       // reassign userInput to be userInput.toUpperCase()
       userInput = userInput.toUpperCase()
+    }
+
+    if (num === true) {
+      // / convert input to type Number
+      userInput = Number(userInput)
+      userInput = `You look ${userInput + 30} years old! `
     }
 
     output.html(`${intro} ${userInput} ${detail}`)
