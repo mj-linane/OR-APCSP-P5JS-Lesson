@@ -51,9 +51,10 @@ function addTopic(topic, intro, detail, uppercase) {
     let userInput = inputFieldUI.value()
 
     if (uppercase === true) {
+      // reassign userInput to be userInput.toUpperCase()
       userInput = userInput.toUpperCase()
     }
 
-    output.html(`{intro} + ${userInput} ${detail}`)
+    output.html(`${intro} ${userInput} ${detail}`)
   }
 }
