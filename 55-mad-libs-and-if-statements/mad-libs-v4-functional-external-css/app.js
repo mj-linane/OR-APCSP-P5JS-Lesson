@@ -1,4 +1,3 @@
-/* eslint-disable prefer-template */
 let outputDivUI
 let inputDivUI
 
