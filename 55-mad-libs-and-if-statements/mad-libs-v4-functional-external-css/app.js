@@ -41,8 +41,6 @@ function addTopic(topic, intro, detail) {
   createElement('p', `Name a ${topic.toUpperCase()}`)
     .id('input-label')
     .parent(inputDivUI)
-  // Using newer template literal instead of +
-  // createElement('p', `Name a ${topic.toUpperCase()}`).id('input-label').parent(inputDivUI)
 
   const inputFieldUI = createInput(' ')
     .id('input-field')
