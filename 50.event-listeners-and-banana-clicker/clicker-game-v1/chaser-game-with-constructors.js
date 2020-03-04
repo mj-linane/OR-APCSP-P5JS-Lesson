@@ -28,7 +28,7 @@ function Fruit(x, y, img) {
   this.x = x
   this.y = y
   image(img, this.x, this.y, 100, 100)
-  this.clicked = function () {
+  this.clicked = () => {
     const d = dist(mouseX, mouseY, this.x, this.y)
 
     if (d < 100) {
