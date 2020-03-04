@@ -1,10 +1,10 @@
-let string = 'my name is MJ   '
+let string = 'my name is MJ'
 
 // CHECK LENGTH
 console.log(string.length)
 
 // CONVERSION
-let num = 5
+let num = 35
 let s = num.toString()
 
 // SEARCHING STRINGS
@@ -34,11 +34,7 @@ s = string + "is great" + num + "years \n old"
 // Concatenate Strings
 s = string.concat('How Are you?')
 
-s = `I am ${num} 
-years old
-this is awesome
-${string}
-`
+s = `Hello! My name is MJ. I am ${string}`
 
 console.log(s)
 // CONVERT TO NUMBER
