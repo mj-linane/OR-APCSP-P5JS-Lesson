@@ -1,0 +1,109 @@
+html,
+body {
+  height: 100%;
+  background-color: lightgray;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  /* This centers the sketch horizontally. */
+  justify-content: center;
+
+  /* This centers the sketch vertically. */
+  align-items: center;
+}
+
+h1 {
+  position: absolute;
+  text-align: center;
+  top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+h4 {
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  position: relative;
+  height: 50px;
+  width: 100px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+}
+
+select {
+  position:relative;
+  max-width: 50px;
+  text-align: center;
+}
+
+#inputs {
+  position: absolute;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+  padding: 50px 100px 50px 100px;
+  background-color: white;
+}
+
+#input-label {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
+
+#input-field {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 250px;
+  height: 25px;
+}
+
+#unlocked-image{
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  height:200px;
+  width:200px;
+}
+
+#locked-image{
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  height:200px;
+  width:200px;
+}
+
+#result-text{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  padding:50px;
+  margin-top:50px;
+  min-width: 100px;
+  background-color: #aaaaaa;
+}
