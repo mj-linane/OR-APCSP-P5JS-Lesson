@@ -7,6 +7,7 @@ body {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
 
   /* This centers the sketch horizontally. */
   justify-content: center;
@@ -21,23 +22,23 @@ h1 {
   top: 30px;
   margin-left: auto;
   margin-right: auto;
-  text-transform: uppercase;
 }
 
 h4 {
-  position: relative;
+  position: absolute;
   text-align: center;
+  top: 70px;
   margin-left: auto;
   margin-right: auto;
 }
 
 button {
   position: relative;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
   height: 50px;
   width: 100px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:20px;
   background-color: red;
   color: white;
   font-size: 14px;
@@ -48,9 +49,21 @@ button {
   top: 150px;
   display: flex;
   flex-direction: column;
+  margin-left: 50%;
+  margin-right: 50%;
   margin-bottom: 200px;
   padding: 50px 100px 50px 100px;
   background-color: white;
+}
+
+#outputs {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  top: 300px;
+  background-color: white;
+  padding: 60px;
 }
 
 #input-label {
@@ -67,29 +80,4 @@ button {
   margin-top: 10px;
   width: 250px;
   height: 25px;
-}
-
-#unlocked-image{
-  position: relative;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:20px;
-  height:200px;
-  width:200px;
-}
-
-#locked-image{
-  position: relative;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:20px;
-  height:200px;
-  width:200px;
-}
-
-#result-text{
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
- text-transform:uppercase;
 }
