@@ -2,7 +2,8 @@ html,
 body {
   height: 100%;
   background-color: lightgray;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
 body {
@@ -37,16 +38,16 @@ button {
   position: relative;
   height: 50px;
   width: 100px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   background-color: red;
   color: white;
   font-size: 14px;
 }
 
 select {
-  position:relative;
+  position: relative;
   max-width: 50px;
   text-align: center;
 }
@@ -78,32 +79,41 @@ select {
   height: 25px;
 }
 
-#unlocked-image{
+#unlocked-image {
   position: relative;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:20px;
-  height:200px;
-  width:200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 200px;
+  width: 200px;
 }
 
-#locked-image{
+#locked-image {
   position: relative;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:20px;
-  height:200px;
-  width:200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 200px;
+  width: 200px;
 }
 
-#result-text{
+#result-text {
   position: relative;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   text-transform: uppercase;
-  padding:50px;
-  margin-top:50px;
+  padding: 50px;
+  margin-top: 50px;
   min-width: 100px;
   background-color: #aaaaaa;
+}
+
+.result-img {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 100px;
+  width: 100px;
 }
