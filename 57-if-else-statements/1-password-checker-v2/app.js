@@ -4,32 +4,37 @@ function setup() {
   createCanvas(windowWidth, windowHeight)
   background('lightgray')
 
-  createDiv().id('inputs')
+  const inputUIDiv = createDiv()
+  inputUIDiv.id('inputs')
 
   createElement('h1', 'Password Checker')
 
-  createElement('h4', 'Enter Your Password')
-    .id('inputs-label')
-    .parent('inputs')
-
+  const h4 = createElement('h4', 'Enter Your Password')
+  h4.id('inputs-label')
+  h4.parent('inputs')
 
   passwordUI = createInput(' ')
-    .id('input-field')
-    .parent('inputs')
+  passwordUI.id('input-field')
+  passwordUI.parent('inputs')
 
   const resultTextUI = createP(' ')
-    .id('result-text')
-    .parent('inputs')
+  resultTextUI.id('result-text')
+  resultTextUI.parent('inputs')
 
+  const lockedImg = createImg('lock.svg', 'locked image')
+  lockedImg.id('locked-image')
+  lockedImg.parent('inputs')
+  lockedImg.hide()
+  const unlockedImg = createImg('unlock.svg', 'unlocked image')
+  unlockedImg.id('unlocked-image')
+  unlockedImg.parent('inputs')
+  unlockedImg.hide()
 
-  const lockedImg = createImg('lock.svg', 'locked image').id('locked-image').parent('inputs').hide()
-  const unlockedImg = createImg('unlock.svg', 'unlocked image').id('unlocked-image').parent('inputs').hide()
+  const loginBtn = createButton('Login')
+  loginBtn.parent('inputs')
+  loginBtn.mousePressed(checkPassword)
 
-  createButton('Login')
-    .parent('inputs')
-    .mousePressed(checkPassword)
-
-  const password = 'test'
+  const password = '123'
 
   function checkPassword() {
     // CODE: hide both images by default
@@ -38,16 +43,11 @@ function setup() {
 
     // CODE: add if statement that checks if the user entered password
     // matches the stored password
-    if (passwordUI.value().trim() === password) {
+    if (passwordUI.value() === password) {
       // CODE: show unlocked image, change result text, change result color.
       unlockedImg.show()
       resultTextUI.html('Login Successful')
       resultTextUI.style('color: green')
-    } else {
-      // CODE: show locked image, change result text, change result color.
-      lockedImg.show()
-      resultTextUI.html('Password Incorrect')
-      resultTextUI.style('color: red')
     }
   }
 }
