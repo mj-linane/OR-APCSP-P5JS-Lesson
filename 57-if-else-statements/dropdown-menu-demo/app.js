@@ -10,10 +10,10 @@ function setup() {
   const foods = createSelect()
   foods.parent('inputs')
   foods.changed(updateResultHandler)
-
-  // ADD CODE: Add dropdown options for foods of the week
   foods.option('Pizza')
   foods.option('Burgers')
   foods.option('Apples')
   foods.option('Sourdough')
+
+  function updateResultHandler() {}
 }
