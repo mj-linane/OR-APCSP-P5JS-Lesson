@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 475 475" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-162.764,-62.7637)">
+        <g id="Smile">
+            <g transform="matrix(1,0,0,1,-77.2363,-37.2363)">
+                <circle cx="477.236" cy="337.236" r="237.236" style="fill:rgb(255,197,0);"/>
+            </g>
+            <g transform="matrix(0.75,0,0,1.48846,100,-166.075)">
+                <path d="M200,340C226.667,362.395 280,407.184 400,407.184C520,407.184 573.333,362.395 600,340" style="fill:none;stroke:black;stroke-width:16.97px;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,-10,-20)">
+                <circle cx="310" cy="220" r="50"/>
+            </g>
+            <g transform="matrix(1,0,0,1,190,-20)">
+                <circle cx="310" cy="220" r="50"/>
+            </g>
+        </g>
+    </g>
+</svg>
