@@ -4,41 +4,50 @@ let score = 0
 let dieValue = 0
 let scoreLabelUI
 let rollResultUI
+let guessSelectUI
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
 
-  createDiv().id('inputs')
+  const inputDivUI = createDiv()
+  inputDivUI.id('inputs')
 
   // Create Header
-  createElement('h2', 'Guessing Game').parent('inputs')
-  createElement('h4', 'Make A Guess and Click To Roll').parent('inputs')
+  const header = createElement('h2', 'Guessing Game')
+  header.parent('inputs')
+
+  const subheader = createElement('h4', 'Make A Guess and Click To Roll')
+  subheader.parent('inputs')
+
   // Create guess select dropdown
-  const guess = createSelect()
-  guess.parent('inputs')
-  guess.option('1')
-  guess.option('2')
-  guess.option('3')
-  guess.option('4')
-  guess.option('5')
-  guess.option('6')
+  guessSelectUI = createSelect()
+  guessSelectUI.parent('inputs')
+  guessSelectUI.option('1')
+  guessSelectUI.option('2')
+  guessSelectUI.option('3')
+  guessSelectUI.option('4')
+  guessSelectUI.option('5')
+  guessSelectUI.option('6')
 
   // Create Roll Button
   createButton('Roll The Die')
     .parent('inputs')
     .mousePressed(getUserInputAndCheck)
 
-  rollResultUI = createElement('h4', `You rolled a: ${dieValue}`).parent(
-    'inputs',
-  )
+  // Creates passive UI elements
+  rollResultUI = createElement('h4', `You rolled a: ${dieValue}`)
+  rollResultUI.parent('inputs')
+
   smileImg = createImg('smile.svg', 'smile image')
-    .addClass('result-img')
-    .parent('inputs')
-    .hide()
+  smileImg.addClass('result-img')
+  smileImg.parent('inputs')
+  smileImg.hide()
+
   sadImg = createImg('frown.svg', 'sad image')
-    .addClass('result-img')
-    .parent('inputs')
-    .hide()
+  sadImg.addClass('result-img')
+  sadImg.parent('inputs')
+  sadImg.hide()
+
   scoreLabelUI = createElement('h4', `Your Score: ${score}`).parent('inputs')
 }
 
@@ -55,17 +64,8 @@ function getUserInputAndCheck() {
   checkGuess(guessNum)
 }
 
-function checkGuess() {}
-
-function updateResultHandler() {
-  resetUI()
-  dieValue = Math.ceil(random(6))
-
-  // Update the result
-  rollResultUI.html(`You rolled a: ${dieValue}`)
-
-  // ADD CODE: If the guess is equal to dieValue
-  if (dieValue === Number(guess.value())) {
+function checkGuess(guess) {
+  if (dieValue === guess) {
     smileImg.show()
     score += 50
     scoreLabelUI.html(`Your Score: ${score}`)
@@ -75,5 +75,15 @@ function updateResultHandler() {
     score -= 1
     // ADD CODE: update the score label to the new score
     scoreLabelUI.html(`Your Score: ${score}`)
+  }
+
+  function updateResultHandler() {
+    resetUI()
+    dieValue = Math.ceil(random(6))
+
+    // Update the result
+    rollResultUI.html(`You rolled a: ${dieValue}`)
+
+    // ADD CODE: If the guess is equal to dieValue
   }
 }
