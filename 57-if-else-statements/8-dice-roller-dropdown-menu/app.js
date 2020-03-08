@@ -1,7 +1,4 @@
-let smileImg
-let sadImg
-let score = 0
-let dieValue = 0
+let score
 let scoreLabelUI
 let rollResultUI
 let guessSelectUI
@@ -12,7 +9,7 @@ function setup() {
   const inputDivUI = createDiv()
   inputDivUI.id('inputs')
 
-  // Create Header
+  // Create Header and subheader
   const header = createElement('h2', 'Guessing Game')
   header.parent('inputs')
 
@@ -30,60 +27,56 @@ function setup() {
   guessSelectUI.option('6')
 
   // Create Roll Button
-  createButton('Roll The Die')
-    .parent('inputs')
-    .mousePressed(getUserInputAndCheck)
+  const rollBtnUI = createButton('Roll The Die')
+  rollBtnUI.parent('inputs')
+  rollBtnUI.mousePressed(getUserInputAndCheck)
 
   // Creates passive UI elements
-  rollResultUI = createElement('h4', `You rolled a: ${dieValue}`)
+  rollResultUI = createElement('h4', 'You rolled a: ')
   rollResultUI.parent('inputs')
 
-  smileImg = createImg('smile.svg', 'smile image')
-  smileImg.addClass('result-img')
-  smileImg.parent('inputs')
-  smileImg.hide()
+  scoreLabelUI = createElement('h4', 'Your Score: ')
+  scoreLabelUI.parent('inputs')
 
-  sadImg = createImg('frown.svg', 'sad image')
-  sadImg.addClass('result-img')
-  sadImg.parent('inputs')
-  sadImg.hide()
+  function getUserInputAndCheck() {
+    // Get user guess and convert to a number type
+    const guessNum = Number(guessSelectUI.value())
 
-  scoreLabelUI = createElement('h4', `Your Score: ${score}`).parent('inputs')
-}
+    // gets random number 0-6
+    const dieValue = Math.ceil(random(6))
 
-// resetUI is called from handler function
-function resetUI() {
-  // reset images and score label on change
-  sadImg.hide()
-  smileImg.hide()
-  scoreLabelUI.html(`Your Score: ${score}`)
-}
-
-function getUserInputAndCheck() {
-  let guessNum = Number(guess.value())
-  checkGuess(guessNum)
-}
-
-function checkGuess(guess) {
-  if (dieValue === guess) {
-    smileImg.show()
-    score += 50
-    scoreLabelUI.html(`Your Score: ${score}`)
-    // ADD CODE: else
-  } else {
-    sadImg.show()
-    score -= 1
-    // ADD CODE: update the score label to the new score
-    scoreLabelUI.html(`Your Score: ${score}`)
-  }
-
-  function updateResultHandler() {
-    resetUI()
-    dieValue = Math.ceil(random(6))
-
-    // Update the result
+    // Update the roll display
     rollResultUI.html(`You rolled a: ${dieValue}`)
 
-    // ADD CODE: If the guess is equal to dieValue
+    // Check the number and the guess
+    checkGuess(guessNum, dieValue)
+
+    // Update the score UI
+    scoreLabelUI.html(`Your Score: ${score}`)
   }
+}
+
+function checkGuess(guess, roll) {
+  if (roll === guess) {
+    increaseScore(10)
+  } else {
+    decreaseScore(1)
+  }
+
+  // Don't delete below, used for testing
+  return score
+}
+
+function increaseScore(amount) {
+  score += amount
+
+  // Don't delete below, used for testing
+  return score
+}
+
+function decreaseScore(amount) {
+  score -= amount
+
+  // Don't delete below, used for testing
+  return score
 }
