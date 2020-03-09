@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-alert */
 const userAge = prompt('How old are you?')
+let resultText = ' '
 
 function ageChecker(age) {
-  let resultText = ''
   // ADD CODE: Convert age from a string to a number
 
   // ADD CODE: Add your if-else-if code here
@@ -15,8 +15,6 @@ function ageChecker(age) {
 
   // Don't change the console.log statement
   console.log(resultText)
-  // Do not delete the return statement, used for testing
-  return resultText
 }
 
 ageChecker(userAge)
