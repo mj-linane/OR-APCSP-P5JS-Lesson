@@ -1,7 +1,5 @@
+/* eslint-disable prefer-const */
 let score
-let scoreLabelUI
-let rollResultUI
-let guessSelectUI
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
@@ -17,7 +15,7 @@ function setup() {
   subheader.parent('inputs')
 
   // Create guess select dropdown
-  guessSelectUI = createSelect()
+  let guessSelectUI = createSelect()
   guessSelectUI.parent('inputs')
   guessSelectUI.option('1')
   guessSelectUI.option('2')
@@ -32,10 +30,10 @@ function setup() {
   rollBtnUI.mousePressed(getUserInputAndCheck)
 
   // Creates passive UI elements
-  rollResultUI = createElement('h4', 'You rolled a: ')
+  let rollResultUI = createElement('h4', 'You rolled a: ')
   rollResultUI.parent('inputs')
 
-  scoreLabelUI = createElement('h4', 'Your Score: ')
+  let scoreLabelUI = createElement('h4', 'Your Score: ')
   scoreLabelUI.parent('inputs')
 
   function getUserInputAndCheck() {
@@ -62,21 +60,12 @@ function checkGuess(guess, roll) {
   } else {
     decreaseScore(1)
   }
-
-  // Don't delete below, used for testing
-  return score
 }
 
 function increaseScore(amount) {
   score += amount
-
-  // Don't delete below, used for testing
-  return score
 }
 
 function decreaseScore(amount) {
   score -= amount
-
-  // Don't delete below, used for testing
-  return score
 }
