@@ -1,7 +1,6 @@
+/* eslint-disable no-unused-vars */
 const secretNumber = 6
-let userGuess
-let resultText
-let pickNumber
+let resultText = ' '
 
 function setup() {
   const inputsDivUI = createDiv()
@@ -13,7 +12,7 @@ function setup() {
   pickNumber = createSelect()
   pickNumber.parent('inputs')
   pickNumber.id('num-select')
-  pickNumber.changed(getGuessAndCheckMatch)
+  pickNumber.changed(getGuessAndCheck)
   pickNumber.option('1')
   pickNumber.option('2')
   pickNumber.option('3')
@@ -25,26 +24,26 @@ function setup() {
   pickNumber.option('9')
   pickNumber.option('10')
 
-  resultText = createP('')
-  resultText.parent('inputs')
-  resultText.id('result-text')
+  resultUI = createP('')
+  resultUI.parent('inputs')
+  resultUI.id('result-text')
 
-  function getGuessAndCheckMatch() {
-    userGuess = Number(pickNumber.value())
+  function getGuessAndCheck() {
+    // Get user input and convert to a number
+    const userGuess = Number(pickNumber.value())
+
+    // Check the number and update the resultText
     checkNumber(userGuess)
+
     // ADD CODE: Update result test in UI
-    
+    resultUI.html(resultText)
   }
 }
 
 function checkNumber(guess) {
-  let hint
   if (guess === secretNumber) {
-    hint = 'You got it!'
+    resultText = 'You got it!'
   } else {
-    hint = "Nope that's not it. Guess again."
+    resultText = "Nope that's not it. Guess again"
   }
-
-  // For automatic testing, don't delete return statement
-  return hint
 }

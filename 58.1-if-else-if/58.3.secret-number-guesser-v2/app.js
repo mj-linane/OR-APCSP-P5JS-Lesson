@@ -1,5 +1,5 @@
 const secretNumber = 6
-let resultText
+let resultText = ' '
 
 function setup() {
   const inputsDivUI = createDiv()
@@ -42,7 +42,9 @@ function setup() {
 function checkNumber(guess) {
   if (guess === secretNumber) {
     resultText = 'You got it!'
+  } else if (guess > secretNumber) {
+    resultText = 'Nope, my number is lower. Guess again.'
   } else {
-    resultText = "Nope that's not it. Guess again."
+    resultText = 'Nope, my number is higher. Guess again.'
   }
 }
