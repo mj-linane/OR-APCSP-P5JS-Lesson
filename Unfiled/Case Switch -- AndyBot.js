@@ -13,50 +13,50 @@ while (seenInstructions === false) {
     switch (true) {
       case instructions === 0:
         andy.say('Hi! My name is Andy.')
-        instructions++
+        instructions += 1
         break
       case instructions === 1:
         andy.say(
           "I am training to be the world's first robot personal assistant.",
         )
-        instructions++
+        instructions += 1
         break
       case instructions === 2:
         andy.say('Here is a problem I am trying to solve.')
-        instructions++
+        instructions += 1
         break
       case instructions === 3:
         andy.say(
           'I want to deliver these mail packages to the people here as quickly as possible.',
         )
-        instructions++
+        instructions += 1
         break
       case instructions === 4:
         andy.say(
           'The mail packages are marked: M1, M2, M3, and M4. Each time you start this map, they appear in different places',
         )
-        instructions++
+        instructions += 1
         break
       case instructions === 5:
         andy.say(
           'The people we must deliver to are marked as P1, P2, P3, and P4 on the map.',
         )
-        instructions++
+        instructions += 1
         break
       case instructions === 6:
         andy.say(
           'I will need to create an algorithm that will help me to get these mail packages to the people as quickly as possible.',
         )
-        instructions++
+        instructions += 1
         break
       case instructions === 7:
         andy.say('Good luck!')
-        instructions++
+        instructions += 1
         seenInstructions === true
         break
       default:
         andy.say('')
-        instructions++
+        instructions += 1
         seenInstructions === true
         break
     }
