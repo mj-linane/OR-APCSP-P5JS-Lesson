@@ -1,12 +1,11 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-alert */
 /* eslint-disable no-unused-vars */
-let resultText = ' '
 const userScore = prompt('What was your quiz score (0-100)?')
+let resultText = ' '
 
 function checkGrade(score) {
   console.log(score, typeof score)
-  resultText = ''
   // ADD CODE: Convert user score from string to Number
   score = Number(score)
   // ADD CODE: Add if-else-if conditional statements
