@@ -15,5 +15,7 @@ function setup() {
   foods.option('Apples')
   foods.option('Sourdough')
 
-  function updateResultHandler() {}
+  function updateResultHandler() {
+
+  }
 }
