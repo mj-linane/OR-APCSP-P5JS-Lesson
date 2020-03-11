@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-let resultText
+let resultText = ' '
 
 function setup() {
   createCanvas(windowWidth, windowHeight)

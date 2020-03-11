@@ -8,9 +8,9 @@ function ageChecker(age) {
 
   // ADD CODE: Add your if-else-if code here
 
-  resultText = 'You can play a rated M game'
-  resultText = 'You can play a rated T game'
-  resultText = 'You can play a rated E game'
+  resultText = 'You can play a rated M game.'
+  resultText = 'You can play a rated T game.'
+  resultText = 'You can play a rated E game.'
   resultText = "Uh. You're too young for most things."
 
   // Don't change the console.log statement
