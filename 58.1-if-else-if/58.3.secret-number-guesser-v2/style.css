@@ -53,8 +53,6 @@ button {
   min-width: 200px;
   display: flex;
   flex-direction: column;
-  margin-left: 50%;
-  margin-right: 50%;
   margin-bottom: 200px;
   padding: 50px 100px 50px 100px;
   background-color: white;
