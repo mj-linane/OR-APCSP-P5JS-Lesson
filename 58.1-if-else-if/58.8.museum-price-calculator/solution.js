@@ -44,6 +44,7 @@ function setup() {
   ageInputUI.option('9')
   ageInputUI.option('10')
   ageInputUI.option('11')
+  ageInputUI.option('12')
   ageInputUI.option('13')
   ageInputUI.option('14')
   ageInputUI.option('15')
