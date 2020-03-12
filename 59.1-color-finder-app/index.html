@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css">
+  <title>Color Finder</title>
+</head>
+
+<body>
+  <main class="main">
+    <header>
+      <h1>Color Finder</h1>
+    </header>
+    <div class="buttons-container">
+      <button id="button1" class='color-button'></button>
+      <button id="button2" class="color-button"></button>
+    </div>
+    <div class="buttons-container">
+      <button id="button3" class="color-button"></button>
+      <button id="button4" class="color-button"></button>
+    </div>
+    <div class="results-container">
+      <div id="player1" class="score-display">
+        <p>Player 1</p>
+        <p id="score1">00</p>
+      </div>
+      <div id="player2" class="score-display">
+        <p>Player 2</p>
+        <p id="score2">00</p>
+      </div>
+  </main>
+  <div id="winner display" class="winner-display hide">
+    <p id="player1WinText" class="p1-wins">Player 1 Won!</p>
+    <p id="player2WinText" class="p2-wins">Player 2 Won!</p>
+  </div>
+  <script src="solution.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+</body>
+
+</html>

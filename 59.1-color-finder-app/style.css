@@ -1,0 +1,116 @@
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  background-color: lightgray;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  margin-top: 4rem;
+  margin: 0.25rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin: 0.25rem;
+}
+
+header {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  padding: 30px;
+  width: 100%;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgb(119, 36, 214),
+    rgb(3, 111, 184)
+  );
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-button {
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  border-radius: 8px;
+  border-style: none;
+}
+
+.color-button:hover {
+  filter: brightness(125%);
+}
+
+.results-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.score-display {
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: white;
+  padding: 30px 60px 30px 60px;
+}
+
+.p1-wins {
+  display: none;
+  font-size: 2rem;
+}
+
+.p2-wins {
+  display: none;
+  font-size: 2rem;
+}
+
+.winner-display {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  right: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  background-color: #333333;
+  color: white;
+  padding: 100px;
+  text-align: center;
+}
+
+.highlight {
+  filter: brightness(125%);
+}
+
+.hide {
+  filter: opacity(0%);
+}
