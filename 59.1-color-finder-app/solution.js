@@ -32,13 +32,13 @@ function setup() {
     button3.style('background-color', color)
     button4.style('background-color', color)
 
-    R += 20
-    G += 20
-    B += 20
+    R += 100
+    G += 100
+    B += 100
+
     let diffColor = `RGB(${R}, ${G}, ${B})`
     randButtonId = `button${Math.floor(random(1, 5))}`
-    let randButtonIdUI = select(`#${randButtonId}`)
-    randButtonIdUI.style.backgroundColor = diffColor
+    select(`#${randButtonId}`).style('background-color', diffColor)
     console.log(`correct button is: ${randButtonId}`)
   }
 
@@ -56,7 +56,6 @@ function setup() {
     checkCorrect('button4')
   })
 
-
   function checkCorrect(buttonId) {
     console.log(`checking: ${buttonId}`)
     if (buttonId === randButtonId) {
@@ -73,10 +72,12 @@ function setup() {
 
   // implements simple "first to 10" game over rule
   function checkGameOver() {
-    if (p1Score >= 10 || p2Score >= 10) { // if anyone is over 10 points the game is over
+    if (p1Score >= 10 || p2Score >= 10) {
+      // if anyone is over 10 points the game is over
       select('.main').style('filter', 'opacity(20%)') // Fade screen
-      select('#winner-display').show()
-      if (p1Score > p2Score) { // figure out who won and show the label
+      select('#winner-display').style('display', 'flex')
+      if (p1Score > p2Score) {
+        // figure out who won and show the label
         select('#player1WinText').show()
       } else {
         select('#player2WinText').show()
@@ -99,12 +100,12 @@ function setup() {
   function switchPlayer() {
     if (currentPlayer === 1) {
       currentPlayer = 2
-      // Add class to p1 .highlight
-      // Remove class to p2 .highlight
+      select('#player1').style('filter', 'opacity(20%)')
+      select('#player2').style('filter', 'opacity(100%)')
     } else {
       currentPlayer = 1
-      // Add class to p2 .highlight
-      // Remove class to p1 .highlight
+      select('#player1').style('filter', 'opacity(100%)')
+      select('#player2').style('filter', 'opacity(20%)')
     }
     console.log(`current player: ${currentPlayer}`)
   }
