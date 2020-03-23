@@ -1,4 +1,4 @@
-# Overview: while Loops
+# Overview
 
 The while loop uses a boolean condition to repeatedly run a block of code. It checks the expression, and if it is true it runs the block of code contained within it. This process of checking the condition and running the block of code is repeated as long as the boolean condition remains true. Once the boolean expression becomes false it will stop.
 
@@ -22,13 +22,11 @@ Notice, the while statement is very similiar to if statement in the way it is wr
 
 ## How To Use This Lesson's Activities & Code Templates
 
-Below I posted a series of exercises that demonstrate a way that while loops work in Javascript.
-
-For each topic, I post some code and then instructions on what to do to the starter code.
+Below I posted a series of exercises that demonstrate a way that while loops work in JavaScript. For each topic, I post some code and then instructions on what to do to the starter code.
 
 You can copy/paste the code into a REPL or you could access the files on GitHub and copy/paste the code into your editor.
 
-Here are the GitHub source files: [while Loops Source Code](https://github.com/mj-linane/apcsp-student-templates/tree/master/60.while-loops)
+**Here are the GitHub source files: [while Loops Source Code](https://github.com/mj-linane/apcsp-student-templates/tree/master/60.while-loops)**
 
 ## 1 Console Log while Loop Values
 
@@ -539,11 +537,11 @@ The starter code sets up the whole experiment for you, except it doesn't count t
 ### Khan Academy
 
 - **GREAT:** Lessons written in P5JS
-- [Javascript Looping](https://www.khanacademy.org/computing/computer-programming/programming/programming/looping#looping) - Lesson Link
+- [JavaScript Looping](https://www.khanacademy.org/computing/computer-programming/programming/programming/looping#looping) - Lesson Link
 
 ### FreeCodeCamp
 
 - **OK:** Lessons written in plain/vanilla JavaScript
 - **NOT GOOD:** Our topic ordering is not the same as there. You will have to search for the lessons/topics you want to practice.
-- [freeCodeCamp Javascript Lessons](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/)
+- [freeCodeCamp JavaScript Lessons](https://www.freecodecamp.org/learn/JavaScript-algorithms-and-data-structures/basic-JavaScript/)
   
