@@ -12,7 +12,7 @@ The while loop we are using is just plain JavaScript. P5js doesn't add anything 
       // Run some code
     }
 
-Notice, the while statement is very similiar to if statement in the way it is written. The only difference is that an if/else statement check will run one time, a while loop runs until a condition is met.
+Notice, the while statement is very similar to if statement in the way it is written. The only difference is that an if/else statement check will run one time, a while loop runs until a condition is met.
 
 ### Explanation Resources
 
@@ -34,7 +34,7 @@ You can copy/paste the code into a REPL or you could access the files on GitHub 
 
 Notice in the code we need to include the command `Math.floor(random())`. We need to do this because it will round the randomly generated floating point decimal number that random() produces and give us a number we can easily check for.
 
-If we just leave it as `random()`, the result could be a mess of number that may never trigger our check condition variable in resonable time. If our target number is "2", `random(3)` might result in 1.2353456, 2.3452, 1.999999 or 2.11111111, but not "2". By using `Math.floor()` we can get rid of the decimal numbers we don't need and speed up our program considerably.
+If we just leave it as `random()`, the result could be a mess of number that may never trigger our check condition variable in reasonable time. If our target number is "2", `random(3)` might result in 1.2353456, 2.3452, 1.999999 or 2.11111111, but not "2". By using `Math.floor()` we can get rid of the decimal numbers we don't need and speed up our program considerably.
 
 ### Do This: Console Log while Loop values
 
@@ -182,7 +182,7 @@ The starter code runs an infinite loop.
 
 ## 6 console.log Before the Loop Starts
 
-Sometimes our code will be doing the right thing but we won't be able to tell because of the way we are console.log ing values. We need to make sure we console.log  all the values we are interested in.
+Sometimes our code will be doing the right thing but we won't be able to tell because of the way we are console.log values. We need to make sure we console.log all the values we are interested in.
 
 This program should write all the values of `num` to the screen as it runs; however it misses one - the first one generated.
 
