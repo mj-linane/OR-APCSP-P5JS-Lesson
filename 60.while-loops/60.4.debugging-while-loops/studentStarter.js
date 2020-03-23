@@ -1,9 +1,9 @@
 function setup() {
-  let num = random(1, 6)
+  let num = Math.floor(random(7))
   console.log(`Number is ${num}`)
   while (num !== 6) {
     console.log('Nope. Not 6. Roll again.')
-    num = random(1, 6)
+    num = Math.floor(random(7))
     console.log(`New number is: ${num}`)
   }
   console.log('Done.')

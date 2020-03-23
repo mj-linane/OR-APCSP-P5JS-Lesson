@@ -9,8 +9,8 @@ function setup() {
 
   while (loopNum < 1000) {
     loopNum += 1
-    die1 = randomNumber(1, 6)
-    die2 = randomNumber(1, 6)
+    die1 = Math.floor(random(7))
+    die2 = Math.floor(random(7))
     console.log(`Rolled a ${die1} and a ${die2} for a total of ${die1 + die2}`)
   }
   console.log(`The number of times 12 was rolled was: ${twelveCount}`)

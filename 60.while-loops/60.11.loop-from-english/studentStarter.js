@@ -1,4 +1,6 @@
+/* eslint-disable prefer-const */
+/* eslint-disable no-unused-vars */
 function setup() {
-  let die1 = random(1, 6)
-  let die2 = random(1, 6)
+  let die1 = Math.floor(random(7))
+  let die2 = Math.floor(random(7))
 }

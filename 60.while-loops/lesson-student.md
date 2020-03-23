@@ -100,12 +100,12 @@ How many times would we have to roll a die before it comes up as a 6? In the pro
 ### Starter Code: If To while Loops
 
     function setup() {
-      let num = random(1, 6)
+      let num = Math.floor(random(7))
       console.log(`Number is ${num}`)
 
       if (num !== 6) {
         console.log('Nope. Not 6. Roll again.')
-        num = random(1, 6)
+        num = Math.floor(random(7))
         console.log(`New number is: ${num}`)
       }
       console.log('Done.')
@@ -125,11 +125,11 @@ Do This: Debug while Loop Variable Values
 ### Starter Code: Debugging while Loops
 
     function setup() {
-      let num = random(1, 6)
+      let num = Math.floor(random(7))
       console.log(`Number is ${num}`)
       while (num !== 6) {
         console.log('Nope. Not 6. Roll again.')
-        num = random(1, 6)
+        num = Math.floor(random(7))
         console.log(`New number is: ${num}`)
       }
       console.log('Done.')
@@ -187,10 +187,10 @@ This program should write all the values of `num` to the screen as it runs; howe
 ### Starter Code: console.log  Before the Loop Starts
 
     function setup() {
-      let num = random(1, 6)
+      let num = Math.floor(random(7))
 
       while (num !== 6) {
-        num = random(1, 6)
+        num = Math.floor(random(7))
         console.log(`Number is: ${num}`)
       }
       console.log('Done.')
@@ -222,7 +222,7 @@ If you use this technique though...
 
       while (num !== 6) {
         console.log('Nope. Not 6. Roll again.')
-        num = randomNumber(1, 6)
+        num = Math.floor(random(7))
         console.log(`New number is ${num}`)
       }
       console.log('Done.')
@@ -250,7 +250,7 @@ The code is completely functional except that it does not console.log one of the
 
       while (num !== 6) {
         console.log(`Number is: ${num}`)
-        num = random(1, 6)
+        num = Math.floor(random(7))
       }
       console.log('Done.')
     }
@@ -272,8 +272,8 @@ Right now this code rolls two dice as long as either one of them is less than 3.
       let die1 = -1
       let die2 = -1
       while (die1 < 3 || die2 < 3) {
-        die1 = random(1, 6)
-        die2 = random(1, 6)
+        die1 = Math.floor(random(7))
+        die2 = Math.floor(random(7))
         console.log(`Rolled a ${die1} and a ${die2}`)
       }
       console.log('Done.')
@@ -320,8 +320,8 @@ Careful: before you edit this code it creates an infinite loop.
       let die1 = -1
       let die2 = -1
       while (true) {
-        die1 = randomNumber(1, 6)
-        die2 = randomNumber(1, 6)
+        die1 = Math.floor(random(7))
+        die2 = Math.floor(random(7))
         console.log(`Rolled a ${die1} and a ${die2}`)
       }
       console.log('Done.')
@@ -346,8 +346,8 @@ Your program should display the results of each roll.
 ### Starter Code: White A Loop From English
 
     function setup() {
-      let die1 = random(1, 6)
-      let die2 = random(1, 6)
+      let die1 = Math.floor(random(7))
+      let die2 = Math.floor(random(7))
     }
 
 ## 12 Debugging: Complex Logic
@@ -358,7 +358,7 @@ The given code accidentally loops infinitely, so something must be wrong with th
 
 ### Do This: Debug Complex Logic
 
-- **Fix** the condition so that it keeps rolling the die as long as the value is not a 2 or a 3.
+- **Fix the condition** so that it keeps rolling the die as long as the value is not a 2 or a 3.
 - **HINT:** Think about other ways you can express this idea in English.
 
 ### Starter Code: Debug Complex Logic
@@ -366,7 +366,7 @@ The given code accidentally loops infinitely, so something must be wrong with th
     function setup() {
       let die1 = -1
       while (die1 !== 2 || die1 !== 3) {
-        die1 = random(1, 6)
+        die1 = Math.floor(random(7))
         console.log(`Rolled a ${die1}`)
       }
       console.log('Done.')
@@ -434,7 +434,7 @@ This is more of a programmer style choice so if you want to write your code usin
       }
     }
 
-## 15 -- AND -= Operators
+## 15 New -- AND -= Operators
 
 As you may have guessed, just as we can write `count = count + 1` as `count++` we can also write `count = count - 1` as `count--` or `count -= 1`.
 
@@ -516,8 +516,8 @@ The starter code sets up the whole experiment for you, except it doesn't count t
 
       while (loopNum < 1000) {
         loopNum += 1
-        die1 = randomNumber(1, 6)
-        die2 = randomNumber(1, 6)
+        die1 = Math.floor(random(7))
+        die2 = Math.floor(random(7))
         console.log(`Rolled a ${die1} and a ${die2} for a total of ${die1 + die2}`)
       }
       console.log(`The number of times 12 was rolled was: ${twelveCount}`)
