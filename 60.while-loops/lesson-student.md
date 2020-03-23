@@ -14,6 +14,12 @@ The while loop we are using is just plain JavaScript. P5js doesn't add anything 
 
 Notice, the while statement is very similiar to if statement in the way it is written. The only difference is that an if/else statement check will run one time, a while loop runs until a condition is met.
 
+### Explanation Resources
+
+- [Debugging JavaScript - Chrome DevTools 101](https://www.youtube.com/watch?v=H0XScE08hy8) - YouTube Video
+- [Coding Train: Local Server, Text Editor, JavaScript Console](https://www.youtube.com/watch?v=UCHzlUiDD10) - Coding Train YouTube Video
+- [Mozilla JavaScript While Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+
 ## 1 Console Log while Loop Values
 
 ### New Code: Math.floor()
@@ -25,28 +31,24 @@ If we just leave it as `random()`, the result could be a mess of number that may
 ### Do This: Console Log while Loop values
 
 - **Starter code** is provided which creates a while loop that repeatedly draws circles around the screen.
-- **Add a console.log** command inside the loop after num is assigned a random number. This way you can see the value the loop is based on.
+- **Add a console.log** command inside the loop after `num` is assigned a random number. This way you can see the value of `num` the loop's continuation is based on.
 
 ### Starter Code
 
-    // CONSOLE LOG while LOOPS
     let num = 0
 
     function setup() {
       createCanvas(windowWidth, windowHeight)
       background('white')
-    }
 
-    function draw() {
-      while (num !== 50) {
+      while (num < 10) {
         const randomX = random(width)
         const randomY = random(height * 0.8)
         translate(randomX, randomY)
         fill('red')
-        circle(random(width), random(height * 0.8), 20)
-        num = Math.floor(random(51)) // We have to use Math.floor to get an integer
+        circle(0, 0, 20)
         translate(-randomX, -randomY)
-        console.log(num)
+        num = Math.floor(random(20)) // We have to use Math.floor to get an integer
       }
     }
 
@@ -61,8 +63,28 @@ In these cases the program enters what is called an *infinite loop* over the com
 Starter code is provided which creates a while loop to draw circles on the screen.
 
 - **Change** the while loop condition to something that will always be true The easiest way to do this is to change 50 to be a number that random will never generate such as 200.
-- **Run the program**. Notice that it will never stop running. You may even get an error from your browser. It's possible you may even need to close the browser window and reload the page.
+- **Run the program.** Notice that it will never stop running. You may even get an error from your browser. It's possible you may even need to close the browser window and reload the page.
 - **Test** a condition using < or > that will also cause an infinite loop.
+
+### Starter Code: Infinite while Loops
+
+    let num = 0
+
+    function setup() {
+      createCanvas(windowWidth, windowHeight)
+      background('white')
+      fill('red')
+
+      while (num !== 10) {
+        let randomX = random(width)
+        let randomY = random(height * 0.8)
+        translate(randomX, randomY)
+        circle(0, 0, 20)
+        translate(-randomX, -randomY)
+        num = Math.floor(random(5)) // Math.floor to get an integer
+        console.log(num)
+      }
+    }
 
 ## 3 Changing if To while Loops
 
@@ -98,7 +120,7 @@ Check this out: We can check the value of a variable in real time (as our progra
 Do This: Debug while Loop Variable Values
 
 - **Run** the program.
-- **Use the Chrome Developer Tools** and its Debug console to check the ending value of `num`. You can do this by typing num in the Debug Console and hitting enter!
+- **Use the Chrome Developer Tools** and its Debug console to check the ending value of `num`. You can do this by typing `num` in the Debug Console and hitting enter!
 
 ### Starter Code: Debugging while Loops
 
@@ -123,7 +145,7 @@ In order to use the debug commands, you first have to indicate which line you wa
 
 - Add a breakpoint on the line where the while loop starts. (Just click the line number.)
 - Use the button to execute each line one at a time.
-- Each time you hit the breakpoint, use the console to check value of num.
+- Each time you hit the breakpoint, use the console to check value of `num`.
 - NOTE: If you hit it will "continue" executing the program normally, unless of course it hits another breakpoint.
 
 ### Developer Chrome Tools Full Guide
@@ -158,8 +180,8 @@ This program should write all the values of `num` to the screen as it runs; howe
 
 ### Do This: console.log  Before the Loop Starts
 
-- **Run** the program a few times and notice that sometimes it just console.log s "Done." and nothing else, even though a number was generated. The first value of `num` never gets displayed.
-- **Add** a console.log statement before the loop to console.log  the first number.
+- **Run the program** a few times and notice that sometimes it just console.log "Done." and nothing else, even though a number was generated. The first value of `num` never gets displayed.
+- **Add a console.log statement** before the loop to console.log the first number.
 - **HINT:** Look at the two times `num` is assigned a value. Which one isn't being displayed?
 
 ### Starter Code: console.log  Before the Loop Starts
@@ -184,14 +206,14 @@ The solution is to initialize the values used in our boolean expression so that 
 
 If you use this technique though...
 
-- You need to make sure you set the value of n`um right away inside the loop.
+- You need to make sure you set the value of `num` right away inside the loop.
 - You probably want to use a nonsense value like -1, so that if you ever see that displayed it will be obvious something is wrong and be easier to debug.
 
 ### Do This: Set A Starting Condition
 
 - **Starter code** is provided which creates a while loop that never runs.
 - **Run** the program once to see that the loop is never entered.
-- **Fix** the problem by changing the initial value of num to a nonsense value such as -1.
+- **Fix** the problem by changing the initial value of `num` to a nonsense value such as -1.
 
 ### Starter Code: Set A Starting Condition
 
@@ -214,7 +236,7 @@ In the code provided, not every number is going to display. However, this time w
 
 ### Do This: console.log After Setting Value
 
-Starter Code: The code is completely functional except that it does not console.log one of the numbers it's supposed to. In addition we don't want it to console.log the dummy variable of -1.
+The code is completely functional except that it does not console.log one of the numbers it's supposed to. In addition we don't want it to console.log the dummy variable of -1.
 
 - **Run the program** to see the behavior.
 - **Fix the code** so that it console.log s all the values of `num`.
@@ -285,7 +307,9 @@ NOTE how we can use the NOT operation to find the logical inverse (or opposite) 
 
 ### Do This: Until Loops
 
-Starter code is provided that repeatedly rolls two dice and writes their values to the screen. Careful: before you edit this code it creates an infinite loop.
+Starter code is provided that repeatedly rolls two dice and writes their values to the screen.
+
+Careful: before you edit this code it creates an infinite loop.
 
 - Use the technique above to modify this code so that the loop stops when both dice are 5 or greater.
 - Try it out and experiment. You should exit the loop the first time both dice have values greater than or equal to 5 displayed.
@@ -460,7 +484,7 @@ Change the loop condition to prevent the infinite loop and stop counting once th
       }
     }
 
-## 17 Use An if Statement In A Loop
+## 17 Use An if Statement In A while Loop
 
 A common thing to do is to use variables to keep track of some sort of count. When used in a loop we count things very quickly.
 
@@ -472,7 +496,7 @@ To figure this out, we could write code to run an experiment. It would go someth
 - Inside the loop, add an if statement: *if die1 + die2 == 12, then add 1 to a counter.*
 - After the loop, display the result.
 
-### Do This: Use An if Statement In A Loop
+### Do This: Use An if Statement In A while Loop
 
 The starter code sets up the whole experiment for you, except it doesn't count the number of 12's rolled - that's your job.
 
@@ -482,7 +506,7 @@ The starter code sets up the whole experiment for you, except it doesn't count t
 
 **NOTE:** If you remove (or comment out) the console.log statement that displays every roll of the dice, the experiment will speed up A LOT! You could do tens of thousands of dice rolls in a matter of seconds.
 
-### Starter Code: If Statement In Loop
+### Starter Code: if Statement In while Loop
 
     function setup() {
       let die1 = -1
@@ -500,3 +524,16 @@ The starter code sets up the whole experiment for you, except it doesn't count t
       console.log('Done.')
     }
 
+## More Practice
+
+### Khan Academy
+
+- **GREAT:** Lessons written in P5JS
+- [Javascript Looping](https://www.khanacademy.org/computing/computer-programming/programming/programming/looping#looping) - Lesson Link
+
+### FreeCodeCamp
+
+- **OK:** Lessons written in plain/vanilla JavaScript
+- **NOT GOOD:** Our topic ordering is not the same as there. You will have to search for the lessons/topics you want to practice.
+- [freeCodeCamp Javascript Lessons](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/)
+  
