@@ -2,12 +2,12 @@
 function setup() {
   createCanvas(windowWidth, windowHeight)
   background('lightgray')
-  createP('This was created in javascript!')
+  createP('This was created in JavaScript!')
 }
 
 function draw() {
   // This will create paragraphs continually
-  createP('This is was also created in javascript')
+  createP('This is was also created in JavaScript')
 }
 
 // // CREATE HTML WITH CREATEELEMENT WITHOUT IDs
