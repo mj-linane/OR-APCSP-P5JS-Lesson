@@ -14,3 +14,26 @@ If we just leave it as `random()`, the result could be a mess of number that may
 
 - **Starter code** is provided which creates a while loop that repeatedly draws circles around the screen.
 - **Add a console.log** command inside the loop after num is assigned a random number. This way you can see the value the loop is based on.
+
+## Starter Code
+
+    // CONSOLE LOG WHILE LOOPS
+    let num = 0
+
+    function setup() {
+      createCanvas(windowWidth, windowHeight)
+      background('white')
+    }
+
+    function draw() {
+      while (num !== 50) {
+        const randomX = random(width)
+        const randomY = random(height * 0.8)
+        translate(randomX, randomY)
+        fill('red')
+        circle(random(width), random(height * 0.8), 20)
+        num = Math.floor(random(51)) // We have to use Math.floor to get an integer
+        translate(-randomX, -randomY)
+        console.log(num)
+      }
+    }
