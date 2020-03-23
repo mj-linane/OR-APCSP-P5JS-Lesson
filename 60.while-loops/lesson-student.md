@@ -28,7 +28,7 @@ For each topic, I post some code and then instructions on what to do to the star
 
 You can copy/paste the code into a REPL or you could access the files on GitHub and copy/paste the code into your editor.
 
-Here are the GitHub source files: 
+Here are the GitHub source files: [while Loops Source Code](https://github.com/mj-linane/apcsp-student-templates/tree/master/60.while-loops)
 
 ## 1 Console Log while Loop Values
 
