@@ -1,4 +1,4 @@
-# while Loops
+# Overview: while Loops
 
 The while loop uses a boolean condition to repeatedly run a block of code. It checks the expression, and if it is true it runs the block of code contained within it. This process of checking the condition and running the block of code is repeated as long as the boolean condition remains true. Once the boolean expression becomes false it will stop.
 
@@ -19,6 +19,16 @@ Notice, the while statement is very similiar to if statement in the way it is wr
 - [Debugging JavaScript - Chrome DevTools 101](https://www.youtube.com/watch?v=H0XScE08hy8) - YouTube Video
 - [Coding Train: Local Server, Text Editor, JavaScript Console](https://www.youtube.com/watch?v=UCHzlUiDD10) - Coding Train YouTube Video
 - [Mozilla JavaScript While Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+
+## How To Use This Lesson's Activities & Code Templates
+
+Below I posted a series of exercises that demonstrate a way that while loops work in Javascript.
+
+For each topic, I post some code and then instructions on what to do to the starter code.
+
+You can copy/paste the code into a REPL or you could access the files on GitHub and copy/paste the code into your editor.
+
+Here are the GitHub source files: 
 
 ## 1 Console Log while Loop Values
 
@@ -97,7 +107,7 @@ How many times would we have to roll a die before it comes up as a 6? In the pro
 - **HINT:** The easiest way to do this is to change the text from if to while.
 - **Run** the program to test out the change.
 
-### Starter Code: If To while Loops
+### Starter Code: if To while Loops
 
     function setup() {
       let num = Math.floor(random(7))
@@ -402,7 +412,7 @@ You can write `count++` to add 1 to count. `count++` does the exact same thing a
 
 This will always count by 1.
 
-### += Operator To Add Any Number (Recommended)
+### += Operator To Add To Any Number (Recommended)
 
 You can also write  `count = count + 1` as `count += 1` to add 1 to count. `count += 1` does the exact same thing as the other methods but with one advantage, you can add whatever number you would like to it, including variables.
 
@@ -444,7 +454,7 @@ Let's write a program that counts down from 10 down to 1.
 
 The current program counts up from 1 to 10.
 
-Change the code to use `count -= 1` to count down from 10 to 1. 
+Change the code to use `count -= 1` to count down from 10 to 1.
 
 You will need to:
 
