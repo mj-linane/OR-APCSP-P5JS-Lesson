@@ -43,16 +43,16 @@ function setup() {
   }
 
   // Add Event Listeners
-  button1.mousePressed(function() {
+  button1.mousePressed(function () {
     checkCorrect('button1')
   })
-  button2.mousePressed(function() {
+  button2.mousePressed(function () {
     checkCorrect('button2')
   })
-  button3.mousePressed(function() {
+  button3.mousePressed(function () {
     checkCorrect('button3')
   })
-  button4.mousePressed(function() {
+  button4.mousePressed(function () {
     checkCorrect('button4')
   })
 
