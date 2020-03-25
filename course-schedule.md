@@ -1,4 +1,4 @@
-# APCSP Course Schedule (Corona Update)
+# AP CSP Course Schedule (Updated 3/24/2020)
 
 ## Week 30 (March 23 - March 27)
 
