@@ -1,4 +1,6 @@
-# Overview
+# While Loops Student Lesson Plan
+
+## Overview
 
 The while loop uses a boolean condition to repeatedly run a block of code. It checks the expression, and if it is true it runs the block of code contained within it. This process of checking the condition and running the block of code is repeated as long as the boolean condition remains true. Once the boolean expression becomes false it will stop.
 
@@ -8,9 +10,11 @@ We are going to start exploring a while loop by modifying the condition on which
 
 The while loop we are using is just plain JavaScript. P5js doesn't add anything to the way we write or use it.
 
-    while(conditionA === conditionB){
-      // Run some code
-    }
+```javascript
+while(conditionA === conditionB){
+  // Run some code
+}
+```
 
 Notice, the while statement is very similar to if statement in the way it is written. The only difference is that an if/else statement check will run one time, a while loop runs until a condition is met.
 
@@ -43,22 +47,24 @@ If we just leave it as `random()`, the result could be a mess of number that may
 
 ### Starter Code
 
-    let num = 0
+```javascript
+let num = 0
 
-    function setup() {
-      createCanvas(windowWidth, windowHeight)
-      background('white')
+function setup() {
+  createCanvas(windowWidth, windowHeight)
+  background('white')
 
-      while (num < 10) {
-        const randomX = random(width)
-        const randomY = random(height * 0.8)
-        translate(randomX, randomY)
-        fill('red')
-        circle(0, 0, 20)
-        translate(-randomX, -randomY)
-        num = Math.floor(random(20)) // We have to use Math.floor to get an integer
-      }
-    }
+  while (num < 10) {
+    const randomX = random(width)
+    const randomY = random(height * 0.8)
+    translate(randomX, randomY)
+    fill('red')
+    circle(0, 0, 20)
+    translate(-randomX, -randomY)
+    num = Math.floor(random(20)) // We have to use Math.floor to get an integer
+  }
+}
+```
 
 ## 2 Infinite while Loops
 
@@ -76,23 +82,25 @@ Starter code is provided which creates a while loop to draw circles on the scree
 
 ### Starter Code: Infinite while Loops
 
-    let num = 0
+```javascript
+let num = 0
 
-    function setup() {
-      createCanvas(windowWidth, windowHeight)
-      background('white')
-      fill('red')
+function setup() {
+  createCanvas(windowWidth, windowHeight)
+  background('white')
+  fill('red')
 
-      while (num !== 10) {
-        let randomX = random(width)
-        let randomY = random(height * 0.8)
-        translate(randomX, randomY)
-        circle(0, 0, 20)
-        translate(-randomX, -randomY)
-        num = Math.floor(random(5)) // Math.floor to get an integer
-        console.log(num)
-      }
-    }
+  while (num !== 10) {
+    let randomX = random(width)
+    let randomY = random(height * 0.8)
+    translate(randomX, randomY)
+    circle(0, 0, 20)
+    translate(-randomX, -randomY)
+    num = Math.floor(random(5)) // Math.floor to get an integer
+    console.log(num)
+  }
+}
+```
 
 ## 3 Changing if To while Loops
 
@@ -107,17 +115,19 @@ How many times would we have to roll a die before it comes up as a 6? In the pro
 
 ### Starter Code: if To while Loops
 
-    function setup() {
-      let num = Math.floor(random(7))
-      console.log(`Number is ${num}`)
+```javascript
+function setup() {
+  let num = Math.floor(random(7))
+  console.log(`Number is ${num}`)
 
-      if (num !== 6) {
-        console.log('Nope. Not 6. Roll again.')
-        num = Math.floor(random(7))
-        console.log(`New number is: ${num}`)
-      }
-      console.log('Done.')
-    }
+  if (num !== 6) {
+    console.log('Nope. Not 6. Roll again.')
+    num = Math.floor(random(7))
+    console.log(`New number is: ${num}`)
+  }
+  console.log('Done.')
+}
+```
 
 ## 4 Debug while Loop Variable Values
 
@@ -132,16 +142,18 @@ Do This: Debug while Loop Variable Values
 
 ### Starter Code: Debugging while Loops
 
-    function setup() {
-      let num = Math.floor(random(7))
-      console.log(`Number is ${num}`)
-      while (num !== 6) {
-        console.log('Nope. Not 6. Roll again.')
-        num = Math.floor(random(7))
-        console.log(`New number is: ${num}`)
-      }
-      console.log('Done.')
-    }
+```javascript
+function setup() {
+  let num = Math.floor(random(7))
+  console.log(`Number is ${num}`)
+  while (num !== 6) {
+    console.log('Nope. Not 6. Roll again.')
+    num = Math.floor(random(7))
+    console.log(`New number is: ${num}`)
+  }
+  console.log('Done.')
+}
+```
 
 ### Debugging Commands: Set Breakpoints
 
@@ -174,11 +186,13 @@ The starter code runs an infinite loop.
 
 ### Starter Code: Update while Loop Condition
 
-    const num = 1
-    while (num !== 6) {
-      console.log('Nope. Not 6. Roll again.')
-    }
-    console.log('Done.')
+```javascript
+const num = 1
+while (num !== 6) {
+  console.log('Nope. Not 6. Roll again.')
+}
+console.log('Done.')
+```
 
 ## 6 console.log Before the Loop Starts
 
@@ -194,15 +208,17 @@ This program should write all the values of `num` to the screen as it runs; howe
 
 ### Starter Code: console.log  Before the Loop Starts
 
-    function setup() {
-      let num = Math.floor(random(7))
+```javascript
+function setup() {
+  let num = Math.floor(random(7))
 
-      while (num !== 6) {
-        num = Math.floor(random(7))
-        console.log(`Number is: ${num}`)
-      }
-      console.log('Done.')
-    }
+  while (num !== 6) {
+    num = Math.floor(random(7))
+    console.log(`Number is: ${num}`)
+  }
+  console.log('Done.')
+}
+```
 
 ## 7 Set A Starting Condition
 
@@ -225,16 +241,18 @@ If you use this technique though...
 
 ### Starter Code: Set A Starting Condition
 
-    function setup() {
-      let num = 6
+```javascript
+function setup() {
+  let num = 6
 
-      while (num !== 6) {
-        console.log('Nope. Not 6. Roll again.')
-        num = Math.floor(random(7))
-        console.log(`New number is ${num}`)
-      }
-      console.log('Done.')
-    }
+  while (num !== 6) {
+    console.log('Nope. Not 6. Roll again.')
+    num = Math.floor(random(7))
+    console.log(`New number is ${num}`)
+  }
+  console.log('Done.')
+}
+```
 
 ## 8 console.log After Setting Value
 
@@ -253,15 +271,17 @@ The code is completely functional except that it does not console.log one of the
 
 ### Starter Code: console.log After Setting Value
 
-    function setup() {
-      let num = -1
+```javascript
+function setup() {
+  let num = -1
 
-      while (num !== 6) {
-        console.log(`Number is: ${num}`)
-        num = Math.floor(random(7))
-      }
-      console.log('Done.')
-    }
+  while (num !== 6) {
+    console.log(`Number is: ${num}`)
+    num = Math.floor(random(7))
+  }
+  console.log('Done.')
+}
+```
 
 ## 9 Boolean Operators in while Loops
 
@@ -276,16 +296,18 @@ Right now this code rolls two dice as long as either one of them is less than 3.
 
 ### Starter Code: Boolean Operators in while Loops
 
-    function setup() {
-      let die1 = -1
-      let die2 = -1
-      while (die1 < 3 || die2 < 3) {
-        die1 = Math.floor(random(7))
-        die2 = Math.floor(random(7))
-        console.log(`Rolled a ${die1} and a ${die2}`)
-      }
-      console.log('Done.')
-    }
+```javascript
+function setup() {
+  let die1 = -1
+  let die2 = -1
+  while (die1 < 3 || die2 < 3) {
+    die1 = Math.floor(random(7))
+    die2 = Math.floor(random(7))
+    console.log(`Rolled a ${die1} and a ${die2}`)
+  }
+  console.log('Done.')
+}
+```
 
 ## 10 Expressing Stopping Conditions: "Until Loops"
 
@@ -324,16 +346,18 @@ Careful: before you edit this code it creates an infinite loop.
 
 ### Starter Code: Until Loops
 
-    function setup() {
-      let die1 = -1
-      let die2 = -1
-      while (true) {
-        die1 = Math.floor(random(7))
-        die2 = Math.floor(random(7))
-        console.log(`Rolled a ${die1} and a ${die2}`)
-      }
-      console.log('Done.')
-    }
+```javascript
+function setup() {
+  let die1 = -1
+  let die2 = -1
+  while (true) {
+    die1 = Math.floor(random(7))
+    die2 = Math.floor(random(7))
+    console.log(`Rolled a ${die1} and a ${die2}`)
+  }
+  console.log('Done.')
+}
+```
 
 ## 11 Write a Loop From English
 
@@ -353,10 +377,12 @@ Your program should display the results of each roll.
 
 ### Starter Code: White A Loop From English
 
-    function setup() {
-      let die1 = Math.floor(random(7))
-      let die2 = Math.floor(random(7))
-    }
+```javascript
+function setup() {
+  let die1 = Math.floor(random(7))
+  let die2 = Math.floor(random(7))
+}
+```
 
 ## 12 Debugging: Complex Logic
 
@@ -371,14 +397,16 @@ The given code accidentally loops infinitely, so something must be wrong with th
 
 ### Starter Code: Debug Complex Logic
 
-    function setup() {
-      let die1 = -1
-      while (die1 !== 2 || die1 !== 3) {
-        die1 = Math.floor(random(7))
-        console.log(`Rolled a ${die1}`)
-      }
-      console.log('Done.')
-    }
+```javascript
+function setup() {
+  let die1 = -1
+  while (die1 !== 2 || die1 !== 3) {
+    die1 = Math.floor(random(7))
+    console.log(`Rolled a ${die1}`)
+  }
+  console.log('Done.')
+}
+```
 
 ## 13 Repeat Specific Number of Times
 
@@ -392,13 +420,15 @@ Instead of writing code that makes the loop run a random number of times, we can
 
 ### Starter Code: Repeat Specific Number of Times
 
-    function setup() {
-      let count = 0
-      while (count < 2) {
-        console.log('Hi')
-        count + 1
-      }
-    }
+```javascript
+function setup() {
+  let count = 0
+  while (count < 2) {
+    console.log('Hi')
+    count + 1
+  }
+}
+```
 
 ## 14 New += and ++ Operators
 
@@ -434,13 +464,15 @@ This is more of a programmer style choice so if you want to write your code usin
 
 ### Starter Code: ++ And += Operators
 
-    function setup() {
-      let count = 0
-      while (count < 4) {
-        console.log('Hi')
-        count = count + 1
-      }
-    }
+```javascript
+function setup() {
+  let count = 0
+  while (count < 4) {
+    console.log('Hi')
+    count = count + 1
+  }
+}
+```
 
 ## 15 New -- AND -= Operators
 
@@ -462,13 +494,15 @@ You will need to:
 
 ### Starter Code: -- And -= Operators
 
-    function setup() {
-      let count = 0
-      while (count < 10) {
-        count += 1
-        console.log(count)
-      }
-    }
+```javascript
+function setup() {
+  let count = 0
+  while (count < 10) {
+    count += 1
+    console.log(count)
+  }
+}
+```
 
 ## 16 Defensive Loop Conditions
 
@@ -484,13 +518,15 @@ Change the loop condition to prevent the infinite loop and stop counting once th
 
 ### Starter Code: Defensive Loop Conditions
 
-    function setup() {
-      let count = 0
-      while (count !== 30) {
-        count += 4
-        console.log(count)
-      }
-    }
+```javascript
+function setup() {
+  let count = 0
+  while (count !== 30) {
+    count += 4
+    console.log(count)
+  }
+}
+```
 
 ## 17 Use An if Statement In A while Loop
 
@@ -516,21 +552,23 @@ The starter code sets up the whole experiment for you, except it doesn't count t
 
 ### Starter Code: if Statement In while Loop
 
-    function setup() {
-      let die1 = -1
-      let die2 = -1
-      let loopNum = 0 // use to count number of loops
-      let twelveCount = 0 // use to count 12's
+```javascript
+function setup() {
+  let die1 = -1
+  let die2 = -1
+  let loopNum = 0 // use to count number of loops
+  let twelveCount = 0 // use to count 12's
 
-      while (loopNum < 1000) {
-        loopNum += 1
-        die1 = Math.floor(random(7))
-        die2 = Math.floor(random(7))
-        console.log(`Rolled a ${die1} and a ${die2} for a total of ${die1 + die2}`)
-      }
-      console.log(`The number of times 12 was rolled was: ${twelveCount}`)
-      console.log('Done.')
-    }
+  while (loopNum < 1000) {
+    loopNum += 1
+    die1 = Math.floor(random(7))
+    die2 = Math.floor(random(7))
+    console.log(`Rolled a ${die1} and a ${die2} for a total of ${die1 + die2}`)
+  }
+  console.log(`The number of times 12 was rolled was: ${twelveCount}`)
+  console.log('Done.')
+}
+```
 
 ## More Practice
 
