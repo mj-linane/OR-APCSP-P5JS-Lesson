@@ -1,3 +1,4 @@
+/* eslint-disable operator-assignment */
 // /**
 //  *Countdown from a given integer to 0 and prints to console.
 //  *
@@ -34,18 +35,18 @@
 
 // diceRoll();
 
-let coin = -1;
-let count = 0;
-let heads = 0;
+let coin = -1
+let count = 0
+let heads = 0
 
 while (heads < 10000) {
-  coin = Math.floor(Math.random() * (+2 - +0)) + +0;
-  count = count + 1;
-  console.log('Count' + count);
-  if (coin == 1) {
-    heads++;
+  coin = Math.floor(Math.random() * (+2 - +0)) + +0
+  count = count + 1
+  console.log(`Count${count}`)
+  if (coin === 1) {
+    heads += 1
   }
-  console.log('Heads: ' + heads);
-};
+  console.log(`Heads: ${heads}`)
+}
 
-console.log('The coin has been flipped' + count + 'times');
+console.log(`The coin has been flipped${count}times`)
