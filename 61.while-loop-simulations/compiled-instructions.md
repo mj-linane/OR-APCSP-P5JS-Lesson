@@ -273,7 +273,7 @@ We want our simulation to run while the streak of heads is less than a target le
     Heads Streak: 3
     Total Flips: 23
 
-## 10 Streaks of Heads: 12 in a Row
+## 10 Streaks of Heads: 12 in a Row (GRADED)
 
 We're almost ready to test our second hypothesis and find out how long it takes to get 12 heads in a row. Just as before we're first going to visually test our code with a different length streak (4) before removing most of the visual output and running the code for a streak of 12.
 
