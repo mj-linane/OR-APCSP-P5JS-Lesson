@@ -2,13 +2,13 @@
 
 ## 1 Overview
 
-In this lesson, you will create an website that will simulate the flipping of a coin. Now, the trick here is that this coin flipping program is going to model an experiment that while possible for a human to do, it is unreasonable.
+In this lesson, you will create a website that will simulate the flipping of a coin. Now, the trick here is that this coin flipping program is going to model an experiment that while possible for a human to do, it is unreasonable.
 
 You are going to write the program to use loops to flip a coin continuously until certain conditions are met.
 
-## Vocabulary
+### Vocabulary
 
-- Models and Simulations: a program which replicates or mimics key features of a real world event in order to investigate its behavior without the cost, time, or danger of running an experiment in real life.
+- Models and Simulations: a program which replicates or mimics key features of a real-world event in order to investigate its behavior without the cost, time, or danger of running an experiment in real life.
 
 ## 2 Make a Hypothesis
 
@@ -18,7 +18,7 @@ For this little experiment, try flipping an actual coin. I know this is 2020 and
 
 Over the next several exercises we are going to be **building a program that simulates flipping coins** in order to find out how many flips it takes to get **10,000 heads in total** and how many flips it takes to **get a streak of 12 heads in a row**.
 
-We will start off with a small scale experiment using a real coin or a simulated "coin". Doing this smaller scale activity may have given you some intuition for what the outcome of the larger experiment will be, but before running an experiment it's usually a good idea to develop a hypothesis.
+We will start off with a small-scale experiment using a real coin or a simulated "coin". Doing this smaller scale activity may have given you some intuition for what the outcome of the larger experiment will be, but before running an experiment it's usually a good idea to develop a hypothesis.
 
 ### Do This: Flip and Record
 
@@ -27,22 +27,22 @@ We will start off with a small scale experiment using a real coin or a simulated
 3. Flip a coin until you get 3 heads in a row. How many flips did it take?
 4. Record your flips by writing “H” or “T” for each flip.
 
-We’ll be developing a simulation that flips coins for us. As a result we can test how many flips it takes to get many more total heads and longer strings of heads. Before we make our simulation, predict the following:
+We’ll be developing a simulation that flips coins for us. As a result, we can test how many flips it takes to get many more total heads and longer strings of heads. Before we make our simulation, predict the following:
 
 1. What is the most flips you expect to see in order to get 10,000 total heads?
-2. What is the fewest flips you expect to see in order to get 10,000 total heads?
+2. What are the fewest flips you expect to see in order to get 10,000 total heads?
 3. What is the most flips you expect to see in order to get 12 heads in a row?
-4. What is the fewest flips you expect to see in order to get 12 heads in a row?
+4. What are the fewest flips you expect to see in order to get 12 heads in a row?
 
 ## 3 Start Small: Generating Random 0 and 1
 
-To start, we're going to simulate flipping a coin 10 times. You might be thinking that isn't many coin flips, and that we could just do those flips in real life, but this is actually an important step in developing a simulation. At small scales we can make sure our code is working as intended because we can still visually confirm its output. Once we're convinced that the logic of our program is reliable we'll move up to simulating larger numbers of flips.
+To start, we're going to simulate flipping a coin 10 times. You might be thinking that isn't many coin flips, and that we could just do those flips in real life, but this is actually an important step in developing a simulation. At small scales we can make sure our code is working as intended because we can still visually confirm its output. Once we're convinced that the logic of our program is reliable, we'll move up to simulating larger numbers of flips.
 
 The core logic of our program will be focused on **a `while` loop** that simulates flipping a coin by repeatedly generating **random 0's or 1's using p5js's `random()`**. This is a great opportunity to keep practicing using loops while applying your knowledge of variables, iteration, and if statements.
 
 ### Do This: Generate Random 0 and 1
 
-When we want to flip a coin with a computer we will instead generate a random number between 0 and 1.
+When we want to flip a coin with a computer, we will instead generate a random number between 0 and 1.
 
 1. Write a program that uses a while loop to flip a coin 10 times and console.logs() the value of each flip to the screen.
 2. **HINT:** you will need to use a counter variable in your while loop to keep track of how many times the coin has been flipped.
@@ -54,7 +54,7 @@ We are going to alter our simulation so that it doesn't count the total number o
 
 To begin with you will change your looping condition so that the loop again only runs 10 times. This will allow us to visually confirm our code is working.
 
-Keeping Track of Streaks: We know we need to count streaks of heads, how do we do this in code? Do we need to keep track of all the previous flips so we know that we're on a streak?
+Keeping Track of Streaks: We know we need to count streaks of heads; how do we do this in code? Do we need to keep track of all the previous flips so we know that we're on a streak?
 
 _The answer is: no. We can instead just count in a clever way that makes our code pretty simple. Make a variable to use as a counter and..._
 
@@ -109,7 +109,7 @@ Your console should look like this:
 
 ## 5 Change the Loop Condition - Counting Heads
 
-We want our simulation to run while the streak of heads is less than a target length. In order to do this we'll need to change our looping condition to use the variables we've been using to count our streak of heads. To begin with your simulation should look for a streak of 3 heads so that you can still visually confirm the output.
+We want our simulation to run while the streak of heads is less than a target length. In order to do this, we'll need to change our looping condition to use the variables we've been using to count our streak of heads. To begin with your simulation should look for a streak of 3 heads so that you can still visually confirm the output.
 
 ### Do This: Change the Loop Condition - Counting Heads
 
@@ -162,7 +162,7 @@ We are going to alter our simulation so that it doesn't count the total number o
 
 To begin with you will change your looping condition so that the loop again only runs 10 times. This will allow us to visually confirm our code is working.
 
-Keeping Track of Streaks: We know we need to count streaks of heads, how do we do this in code? Do we need to keep track of all the previous flips so we know that we're on a streak?
+Keeping Track of Streaks: We know we need to count streaks of heads; how do we do this in code? Do we need to keep track of all the previous flips so we know that we're on a streak?
 
 The answer is: **no**. We can instead just count in a clever way that makes our code pretty simple. Make a variable to use as a counter and...
 
@@ -216,12 +216,12 @@ Here is some pseudocode showing how it works. You might take a minute to study a
 
 ## 9 Changing the Loop Condition --> Streaks of Heads
 
-We want our simulation to run while the streak of heads is less than a target length. In order to do this we'll need to change our looping condition to use the variables we've been using to count our streak of heads. To begin with your simulation should look for a streak of 3 heads so that you can still visually confirm the output.
+We want our simulation to run while the streak of heads is less than a target length. In order to do this, we'll need to change our looping condition to use the variables we've been using to count our streak of heads. To begin with your simulation should look for a streak of 3 heads so that you can still visually confirm the output.
 
 ### Do This: Changing the Loop Condition --> Streaks of Heads
 
 1. Change the condition used by your while loop so that it now runs while the streak of heads is less than 3.
-2. Test your program by running it and visually confirming that its output is correct. It's output should roughly look like the example below.
+2. Test your program by running it and visually confirming that its output is correct. Its output should roughly look like the example below.
 
 ### Expected Output: Changing the Loop Condition --> Streaks of Heads
 
