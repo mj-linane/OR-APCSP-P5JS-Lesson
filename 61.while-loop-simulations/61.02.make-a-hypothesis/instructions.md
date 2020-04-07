@@ -2,7 +2,7 @@
 
 ### Coin Flip Hypothesis
 
-For this little experiment, try flipping an actual coin. I know this is 2020 and few of us probably have coins at the read. If you don't have a real coin, use this: https://www.google.com/search?q=flip+a+coin
+For this little experiment, try flipping an actual coin. I know this is 2020 and few of us probably have coins at the read. If you don't have a real coin, use this: <https://www.google.com/search?q=flip+a+coin>
 
 Over the next several exercises we are going to be **building a program that simulates flipping coins** in order to find out how many flips it takes to get **10,000 heads in total** and how many flips it takes to **get a streak of 12 heads in a row**.
 
