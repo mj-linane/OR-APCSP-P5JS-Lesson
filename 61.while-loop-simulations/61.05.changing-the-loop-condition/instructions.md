@@ -10,16 +10,19 @@ We want our simulation to run while the streak of heads is less than a target le
 ### Expected Output: Change Loop Condition - Counting Heads
 
 Your console should look like this:
-    1
-    Heads: 1
-    0
-    Heads: 1
-    1
-    Heads: 2
-    1
-    Heads: 3
-    1
-    Heads: 4
-    1
-    Heads: 5
-    Total Flips: 6
+
+```none
+1
+Heads: 1
+0
+Heads: 1
+1
+Heads: 2
+1
+Heads: 3
+1
+Heads: 4
+1
+Heads: 5
+Total Flips: 6
+```
