@@ -16,7 +16,7 @@ function setup() {
   // Create Select Button
   const sel = createSelect()
   sel.parent('inputs')
-  // ADD CODE: Add dropdown options for ages 5-18+
+  // ADD CODE: Add dropdown options for ages 5-18
 
   // ADD CODE: add a sel.changed() and give it the callback function
 
