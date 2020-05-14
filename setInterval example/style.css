@@ -1,0 +1,16 @@
+html,
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content {
+  font-size: 60px;
+  color: "black";
+  text-rendering: optimizeLegibility;
+  font-style: italic;
+  text-decoration: underline;
+}
