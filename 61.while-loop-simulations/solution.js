@@ -7,7 +7,7 @@ function setup() {
 
 
 function flipCounter(target) {
-  while (numHeads < target) { // ** Change looping condition **
+  while (numHeads < target) { // Change looping condition
     const flip = Math.floor(random(2))
     if (flip === 1) {
       numHeads += 1 // If flip is 1 (heads), increment heads streak counter
