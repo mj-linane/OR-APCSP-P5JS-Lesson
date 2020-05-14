@@ -44,43 +44,39 @@ The core logic of our program will be focused on **a `while` loop** that simulat
 
 When we want to flip a coin with a computer, we will instead generate a random number between 0 and 1.
 
-1. Write a program that uses a while loop to flip a coin 10 times and console.logs() the value of each flip to the screen.
-2. **HINT:** you will need to use a counter variable in your while loop to keep track of how many times the coin has been flipped.
-3. **HINT:** You will also need to use the `Math.floor()` JavaScript function we used in the previous lesson. Otherwise, the numbers being flipped won't be 0 and 1, it will be 0, .9334534, .12121, etc. You get the point.
+1. Write a program that uses a `while()` loop to flip a coin 10 times and `console.logs()` the value of each flip to the screen.
+2. You will need to create a new a counter variable in your `while()` loop to keep track of how many times the coin has been flipped.
+3. You will also need to use the `Math.floor()` JavaScript function we used in the previous lesson. Otherwise, the numbers being flipped won't be 0 and 1, it will be 0, .9334534, .12121, etc. You get the point.
 
 ## 4 Counting Heads
 
-We are going to alter our simulation so that it doesn't count the total number of heads, but rather the longest streaks of heads. This will allow us to simulate how many flips it takes to get 12 heads in a row.
+We are going to modify our code to count the number of heads that are generated when we have a certain number of flips.
 
 To begin with you will change your looping condition so that the loop again only runs 10 times. This will allow us to visually confirm our code is working.
 
-Keeping Track of Streaks: We know we need to count streaks of heads; how do we do this in code? Do we need to keep track of all the previous flips so we know that we're on a streak?
-
-_The answer is: no. We can instead just count in a clever way that makes our code pretty simple. Make a variable to use as a counter and..._
-
-1. every time you see heads, add 1 to a counter.
-2. every time you see tails, set the counter back to 0
+_To do this we can just count using a variable as a counter. Every time you see heads, add 1 to a counter._
 
 Here is some pseudocode showing how it works. You might take a minute to study and reason about why and how it works.
 
 ### Pseudocode: Counting Heads
 
     // Outside loop
-    headsCount <-- 0
+    headCount <-- 0
 
-    // Inside loop  
+    // Inside loop
     IF (current flip is a heads)
-      headsCount <-- headsCount + 1
-    ELSE
-      headsCount <-- 0
+      headCount <-- headCount + 1
+
     DISPLAY (current flip)
     DISPLAY (headsCount)
 
 ### Do This: Counting Heads
 
-1. Change your while loop's condition so that it only runs 10 times.
-2. Add code to the simulation that displays the length of each streak of heads following the logic described above. Note that pseudocode should translate to JavaScript pretty easily.
-3. The example below shows an example of what output from your program might look like.
+1. Check your `while()` loop's condition so that it only runs **10 times**.
+2. Create new variable called headsCount
+3. Add code to the simulation that displays the length of each streak of heads following the logic described above. Note that pseudocode should translate to JavaScript pretty easily.
+4. Modify the output to only show the flip and the count of heads.
+5. The example below shows an example of what output from your program might look like.
 
 ### Expected Output: Counting Heads
 
@@ -109,7 +105,7 @@ Your console should look like this:
 
 ## 5 Change the Loop Condition - Counting Heads
 
-We want our simulation to run while the streak of heads is less than a target length. In order to do this, we'll need to change our looping condition to use the variables we've been using to count our streak of heads. To begin with your simulation should look for a streak of 3 heads so that you can still visually confirm the output.
+We want our simulation to run while the number of heads is less than a target length. In order to do this, we'll need to change our looping condition to use the variables we've been using to count our number of heads. To begin with your simulation should look for a max number of 3 heads so that you can still visually confirm the output.
 
 ### Do This: Change the Loop Condition - Counting Heads
 
@@ -119,19 +115,19 @@ We want our simulation to run while the streak of heads is less than a target le
 ### Expected Output: Change Loop Condition - Counting Heads
 
 Your console should look like this:
-    1
-    Heads: 1
-    0
-    Heads: 1
-    1
-    Heads: 2
-    1
-    Heads: 3
-    1
-    Heads: 4
-    1
-    Heads: 5
-    Total Flips: 6
+1
+Heads: 1
+0
+Heads: 1
+1
+Heads: 2
+1
+Heads: 3
+1
+Heads: 4
+1
+Heads: 5
+Total Flips: 6
 
 ## 6 10,000 Heads
 
@@ -140,7 +136,7 @@ You're ready to increase the number of heads your simulation is looking for and 
 ### Do This: 10,000 Heads
 
 1. Increase the number of heads you are looking for to 7 and visually confirm that the code is still working as you expect.
-2. If everything seems to be working, comment out the console.log() command that displays the results of each flip. You can use // to comment out a single line of code. Make sure that the total count of flips still prints though!
+2. If everything seems to be working, comment out the `console.log()` command that displays the results of each flip. You can use // to comment out a single line of code. Make sure that the total count of flips still prints though!
 3. Run your simulation and find out how long it takes to get to 10,000 heads. Then run it a few more times. What patterns are you noticing?
 
 ### Expected Output: 10,000 Heads
@@ -164,10 +160,10 @@ To begin with you will change your looping condition so that the loop again only
 
 Keeping Track of Streaks: We know we need to count streaks of heads; how do we do this in code? Do we need to keep track of all the previous flips so we know that we're on a streak?
 
-The answer is: **no**. We can instead just count in a clever way that makes our code pretty simple. Make a variable to use as a counter and...
+_The answer is: **no**. We can instead just count in a clever way that makes our code pretty simple. Make a variable to use as a counter and..._
 
-  1. every time you see heads, add 1 to a counter.
-  2. every time you see tails, set the counter back to 0.
+1. every time you see heads, add 1 to a counter.
+2. every time you see tails, set the counter back to 0.
 
 Here is some pseudocode showing how it works. You might take a minute to study and reason about why and how it works.
 
@@ -176,7 +172,7 @@ Here is some pseudocode showing how it works. You might take a minute to study a
         // Outside loop
         headsCount <-- 0
 
-        // Inside loop  
+        // Inside loop
         IF (current flip is a heads)
         headsCount <-- headsCount + 1
         ELSE
