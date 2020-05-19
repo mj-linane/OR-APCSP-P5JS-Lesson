@@ -1,37 +1,38 @@
-//Global variables
-let myName = "MJ";
-let amount = 3;
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-shadow */
+// Global variables
+const myName = 'MJ'
+const amount = 3
 
 
 // code here can use myName
 
-function myFunction() {
-  let amount = 0;
-  // code here can also use myName 
+function myFunction1() {
+  const amount = 0
+  // code here can also use myName
 
 
-  //Local variables
+  // Local variables
   // code here can NOT use myName
 
-  function myFunction() {
-    let myName = "MJ";
-    let amount = 3;
+  function myFunction2() {
+    const myName = 'MJ'
+    const amount = 3
 
     // code here CAN use myName
-
   }
 
-  //Function Parameters are local variables by default
+  // Function Parameters are local variables by default
 
-  function myFunction(name) {
+  function myFunction3(name) {
     console.log(name)
   }
-  //name can NOT be used here
+  // name can NOT be used here
 
-  //But...NAME can be used
-  myFunction(MJ)
+  // But...NAME can be used
+  myFunction4(MJ)
 
-  if (x = 0) {
+  if (x === 0) {
     console.log(x)
   }
 }
