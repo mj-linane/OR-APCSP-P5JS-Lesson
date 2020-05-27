@@ -1,4 +1,3 @@
-const counter = 0
 printPrime(45423)
 
 function printPrime(value) {

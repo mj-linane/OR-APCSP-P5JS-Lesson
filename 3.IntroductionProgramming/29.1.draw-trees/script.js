@@ -7,15 +7,15 @@ function draw() {
   console.log(mouseX, mouseY)
   fill('SaddleBrown')
   rect(-1, 300, 2000, 500)
-  drawtree()
+  drawTree()
   translate(300, -134)
-  drawtree()
+  drawTree()
   translate(300, -134)
-  drawtree()
+  drawTree()
 }
 
-function drawtree() {
-  fill('Brown')
+function drawTree() {
+  fill('brown')
   square(100, 250, 50)
   fill('green')
   triangle(50, 250, 200, 250, 125, 75)
@@ -46,7 +46,4 @@ function decorations() {
   ornament()
   translate(-50, 5)
   ornament()
-}
-function star() {
-
 }
