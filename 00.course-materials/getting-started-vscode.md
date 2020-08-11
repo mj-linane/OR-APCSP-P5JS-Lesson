@@ -1,6 +1,6 @@
 # Getting Started With VISUAL STUDIO CODE
 
-We recommend using Visual Studio Code (VSCode) for doing the programming assignments in AP CSP.
+I recommend using Visual Studio Code (VSCode) for doing the programming assignments in AP CSP.
 
 You will need to use some text editor for editing JavaScript programs and web pages (e.g., html and css files).
 It is worth investing your time in learning to use good tools (like VSCode).
