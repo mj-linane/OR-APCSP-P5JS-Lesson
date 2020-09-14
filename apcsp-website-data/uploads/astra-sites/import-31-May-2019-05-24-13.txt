@@ -1,0 +1,132 @@
+
+Started Import Process
+# System Details: 
+Debug Mode 		: Disabled
+Operating System 	: Linux
+Software 		: Apache
+MySQL version 		: 5.6.40
+XML Reader 		: Yes
+PHP Version 		: 7.3.7
+PHP Max Input Vars 	: 1000
+PHP Max Post Size 	: 128M
+PHP Extension GD 	: Yes
+PHP Max Execution Time 	: 120
+Max Upload Size 	: 128 MB
+Memory Limit 		: Current memory limit 40M. We recommend setting memory to at least 64M.
+Timezone 		: America/New_York
+
+-----
+
+Importing Started! - 18:53:54 UTC
+---
+
+WHY IMPORT PROCESS CAN FAIL? READ THIS - 
+https://wpastra.com/docs/?p=1314&utm_source=demo-import-panel&utm_campaign=import-error&utm_medium=wp-dashboard
+
+---
+
+Importing from XML https://websitedemos.net/wp-content/uploads/astra-sites/462/wxr.xml
+Inserted - Term 13 - {"term_id":13,"name":"Free","slug":"free","term_group":0,"term_taxonomy_id":13,"taxonomy":"category","description":"","parent":0,"count":0,"filter":"raw"}
+Inserted - Term 14 - {"term_id":14,"name":"General","slug":"general","term_group":0,"term_taxonomy_id":14,"taxonomy":"category","description":"","parent":0,"count":0,"filter":"raw"}
+Inserted - Term 15 - {"term_id":15,"name":"Paid","slug":"paid","term_group":0,"term_taxonomy_id":15,"taxonomy":"category","description":"","parent":0,"count":0,"filter":"raw"}
+Inserted - Term 16 - {"term_id":16,"name":"Free","slug":"free","term_group":0,"term_taxonomy_id":16,"taxonomy":"post_tag","description":"","parent":0,"count":0,"filter":"raw"}
+Inserted - Term 17 - {"term_id":17,"name":"Paid","slug":"paid","term_group":0,"term_taxonomy_id":17,"taxonomy":"post_tag","description":"","parent":0,"count":0,"filter":"raw"}
+Inserted - Term 18 - {"term_id":18,"name":"Free","slug":"free","term_group":0,"term_taxonomy_id":18,"taxonomy":"ld_course_category","description":"","parent":0,"count":0,"filter":"raw"}
+Inserted - Term 19 - {"term_id":19,"name":"Paid","slug":"paid","term_group":0,"term_taxonomy_id":19,"taxonomy":"ld_course_category","description":"","parent":0,"count":0,"filter":"raw"}
+Inserted - Term 20 - {"term_id":20,"name":"Primary Menu","slug":"primary-menu","term_group":0,"term_taxonomy_id":20,"taxonomy":"nav_menu","description":"","parent":0,"count":0,"filter":"raw"}
+Inserted - Post 1461 - attachment - about-1-free-img.jpg
+Inserted - Post 1462 - attachment - about-2-free-img.jpg
+Inserted - Post 1522 - attachment - testimonial1-free-img
+Inserted - Post 1523 - attachment - testimonial4-free-img
+Inserted - Post 1524 - attachment - testimonial3-free-img
+Inserted - Post 1525 - attachment - testimonial2-free-img
+Inserted - Post 24221 - attachment - course-1-free-img
+Inserted - Post 24222 - attachment - course-2-free-img
+Inserted - Post 24318 - attachment - instructor-1-free-img
+Inserted - Post 24319 - attachment - instructor-3-free-img
+Inserted - Post 24320 - attachment - instructor-2-free-img
+Inserted - Post 24375 - attachment - instructor-4-free-img
+Inserted - Post 24379 - attachment - manager-free-img
+Inserted - Post 24463 - attachment - logos-04-free-img
+Inserted - Post 24464 - attachment - logos-01-free-img
+Inserted - Post 24465 - attachment - logos-02-free-img
+Inserted - Post 24466 - attachment - logos-03-free-img
+Inserted - Post 24480 - attachment - social-media-free-img
+Inserted - Post 24494 - attachment - social-media-2
+Inserted - Post 24507 - attachment - email-marketing-free-img
+Inserted - Post 4 - attachment - woocommerce-placeholder
+Inserted - Post 6 - attachment - learn-dash-white-logo
+Inserted - Post 24535 - attachment - learn-dash-favicaon2
+Inserted - Post 24536 - attachment - ld2
+Inserted - Post 24540 - attachment - learn-dash-blue-logo
+Inserted - Post 24541 - attachment - learn-dash-white-logo
+Inserted - Post 24671 - attachment - content-free-img
+Inserted - Post 24676 - attachment - growth-hacking-free-img
+Inserted - Post 24682 - attachment - course-3-free-img
+Inserted - Post 24687 - attachment - yoast-free-img
+Inserted - Post 24690 - attachment - learn-dash-blue-logo-1
+Inserted - Post 24715 - attachment - testimonial4-free-img.jpg
+Inserted - Post 24716 - attachment - testimonial1-free-img.jpg
+Inserted - Post 24717 - attachment - testimonial3-free-img.jpg
+Inserted - Post 24718 - attachment - testimonial2-free-img.jpg
+Inserted - Post 24719 - attachment - about-1-free-img.jpg
+Inserted - Post 24720 - attachment - about-2-free-img.jpg
+Inserted - Post 24721 - attachment - instructor-1-free-img.jpg
+Inserted - Post 24722 - attachment - instructor-2-free-img.jpg
+Inserted - Post 24723 - attachment - instructor-3-free-img.jpg
+Inserted - Post 7 - custom_css - astra
+Inserted - Post 17 - page - Home
+Inserted - Post 158 - page - About
+Inserted - Post 1067 - custom_css - astra-child
+Inserted - Post 1506 - nav_menu_item - 
+Inserted - Post 1507 - nav_menu_item - 
+Inserted - Post 1508 - nav_menu_item - 
+Inserted - Post 1509 - nav_menu_item - 
+Inserted - Post 1510 - nav_menu_item - 
+Inserted - Post 24724 - attachment - instructor-4-free-img.jpg
+Inserted - Post 24725 - attachment - ld2.jpg
+Inserted - Post 24726 - attachment - manager-free-img.png
+Inserted - Post 24727 - attachment - logos-03-free-img.png
+Inserted - Post 24728 - attachment - logos-02-free-img.png
+Inserted - Post 24729 - attachment - logos-04-free-img.png
+Inserted - Post 24730 - attachment - logos-01-free-img.png
+Inserted - Post 25605 - attachment - phone01
+Inserted - Post 25606 - attachment - mail
+Inserted - Post 25607 - attachment - map
+Inserted - Post 25608 - attachment - admin-ajax
+Inserted - Post 69 - sfwd-courses - Social Media Marketing
+Inserted - Post 71 - sfwd-courses - Email Marketing Strategies
+Inserted - Post 83 - sfwd-lessons - Developing Strategy
+Inserted - Post 85 - sfwd-lessons - Monitoring &#038; Digital Advertising
+Inserted - Post 87 - sfwd-lessons - Investment &#038; Marketing  Final Strategies
+Inserted - Post 91 - sfwd-lessons - Deliverability Of Your Emails
+Inserted - Post 175 - sfwd-topic - This is the First Topic
+Inserted - Post 181 - sfwd-topic - Monitoring &#038; Advertising
+Inserted - Post 183 - sfwd-topic - Basic Investment &#038; Social Media Influencing
+Inserted - Post 200 - sfwd-topic - Success with Advert
+Inserted - Post 201 - page - All Courses
+Inserted - Post 25609 - sfwd-lessons - Effective Writing &#038; Promoting Your Content
+Inserted - Post 289 - sfwd-topic - Growth Hacking With Your Content
+Inserted - Post 324 - page - My Account
+Inserted - Post 401 - page - Contact
+Inserted - Post 24042 - sfwd-courses - Content Marketing
+Inserted - Post 24182 - sfwd-topic - Relationships
+Inserted - Post 24183 - sfwd-topic - The Power Of Effective Content
+Inserted - Post 24186 - sfwd-lessons - Improving &#038; Designing Marketing Emails
+Inserted - Post 24187 - sfwd-lessons - Analyze Content &#038; Develop Writing Strategies
+Imported - Site Options {"woocommerce_product_attributes":[],"woocommerce_product_cat_list":[],"woocommerce_product_cat":[],"custom_logo":"https:\/\/websitedemos.net\/learndash-academy-07\/wp-content\/uploads\/sites\/462\/2019\/06\/learn-dash-blue-logo.svg","nav_menu_locations":{"primary":"primary-menu"},"show_on_front":"page","page_on_front":"Home","page_for_posts":"","_fl_builder_enabled_icons":null,"_fl_builder_enabled_modules":null,"_fl_builder_post_types":null,"_fl_builder_color_presets":null,"_fl_builder_services":null,"_fl_builder_settings":null,"_fl_builder_user_access":null,"_fl_builder_enabled_templates":null,"siteorigin_widgets_active":null,"elementor_container_width":"","elementor_cpt_support":["post","page","sfwd-courses","sfwd-lessons"],"elementor_css_print_method":"external","elementor_default_generic_fonts":"Sans-serif","elementor_disable_color_schemes":"yes","elementor_disable_typography_schemes":"yes","elementor_editor_break_lines":"","elementor_exclude_user_roles":null,"elementor_global_image_lightbox":"yes","elementor_page_title_selector":"","elementor_scheme_color":{"1":"#6ec1e4","2":"#54595f","3":"#7a7a7a","4":"#61ce70"},"elementor_scheme_color-picker]":null,"elementor_scheme_typography":{"1":{"font_family":"Roboto","font_weight":"600"},"2":{"font_family":"Roboto Slab","font_weight":"400"},"3":{"font_family":"Roboto","font_weight":"400"},"4":{"font_family":"Roboto","font_weight":"500"}},"elementor_space_between_widgets":"","elementor_stretched_section_container":"","woocommerce_shop_page_title":"","woocommerce_cart_page_title":"","woocommerce_checkout_page_title":"","woocommerce_myaccount_page_title":"","woocommerce_edit_address_page_title":"","woocommerce_view_order_page_title":"","woocommerce_change_password_page_title":"","woocommerce_logout_page_title":"","woocommerce_enable_guest_checkout":"yes","woocommerce_enable_checkout_login_reminder":"no","woocommerce_enable_signup_and_login_from_checkout":"no","woocommerce_enable_myaccount_registration":"no","woocommerce_registration_generate_username":"yes","wpforms_settings":{"disable-css":"2","global-assets":false,"gdpr":false},"learndash_settings_theme_ld30":{"color_primary":"#0984e3","color_secondary":"#0984e3","color_tertiary":"#003bb1","focus_mode_enabled":"yes","login_mode_enabled":"yes","login_logo":24540,"responsive_video_enabled":"yes"},"learndash_settings_courses_themes":{"active_theme":"ld30"}}
+Complete 
+Batch Process Started!
+Astra Sites - Importing Images for Blog name 'Coding Class' (1)
+---- Processing Images from Widgets -----
+---- Processing WordPress Posts / Pages - for "Gutenberg" ----
+---- Processing Mapping - for Astra Pro ----
+---- Processing MISC ----
+Post ID: 25212
+Post ID: 25179
+Post ID: 1506
+Post ID: 1507
+Post ID: 1508
+Post ID: 1509
+Post ID: 1510
+Batch Process Complete!
